@@ -6,7 +6,7 @@ comments: true
 categories: [snippet, C#]
 ---
 
-```
+```csharp
 public static class NullEvaluatorExtension {
     
     public static TResult Eval<T, TResult>(this T obj, Func<T, TResult> func) where T : class
