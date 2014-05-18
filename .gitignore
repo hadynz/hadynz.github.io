@@ -14,4 +14,4 @@ $RECYCLE.BIN/
 .DS_Store
 
 # Editor extensions
-.idea
+.idea/*
