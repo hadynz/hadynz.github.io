@@ -13,5 +13,8 @@ $RECYCLE.BIN/
 # Mac crap
 .DS_Store
 
+# Grunt
+node_modules
+
 # Editor extensions
-.idea/*
+.idea
