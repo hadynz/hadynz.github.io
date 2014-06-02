@@ -1,8 +1,8 @@
+# Compiled Jekyll folder
 _site
 
 # Windows image file caches
 Thumbs.db
-ehthumbs.db
 
 # Folder config file
 Desktop.ini
@@ -12,9 +12,6 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
-
-# Grunt
-node_modules
 
 # Editor extensions
 .idea
