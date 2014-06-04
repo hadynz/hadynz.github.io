@@ -1,5 +1,6 @@
-# Compiled Jekyll folder
+# Project folders to ignore
 _site
+node_modules
 
 # Windows image file caches
 Thumbs.db

@@ -1,14 +1,19 @@
-<ul class="main-navigation">
-    <li><a href="/about/">about</a></li>
-    <li><a href="/archive">archives</a></li>
-    <li><a href="https://github.com/hadynz/feedback/issues/new">contact</a></li>
-    <li><a href="/contributors">contributors</a></li>
-</ul>
+<div class="navigation-wrapper">
 
-{% if site.description %}
-<section class="aboutme">
-    <p>
-        {{ site.description }}
-    </p>
-</section>
-{% endif %}
+    <div class="site-name">
+        <a href="/">{{ site.title }}</a>
+    </div>
+
+    <div class="top-navigation">
+        <nav role="navigation" id="site-nav" class="nav">
+            <ul>
+                {% for link in site.links %}
+                <li>
+                    <a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+
+</div>

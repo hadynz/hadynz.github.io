@@ -1,16 +1,16 @@
 ---
 layout: default
+type: page
 ---
+<article>
+    <h1>{{ page.title }}</h1>
 
-<article class="page">
-    {% if page.title %}
-    <h1 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    <div class="article-wrap">
+        {{ content }}
+    </div>
+
+    {% if site.disqus_shortname and page.comments %}
+        <section id="disqus_thread"></section>
     {% endif %}
-    <div class="entry-content">{{ content }}</div>
+
 </article>
-{% if site.disqus_short_name and page.comments == true %}
-<section id="comment">
-    <h1 class="title">Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-</section>
-{% endif %}
