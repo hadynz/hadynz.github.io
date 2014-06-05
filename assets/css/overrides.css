@@ -15,19 +15,54 @@ p + p {
  */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 .post-title {
     letter-spacing: -0.04em;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.1;
 }
 
 body {
-    color: rgba(0, 0, 0, 0.8);
+    color: #444444;
     font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.01rem;
     -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Code font sizes
+ */
+.highlight {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.highlight pre {
+    font-size: 12px;
+    line-height: 19px;
+    padding: 0;
+    max-height: 400px;
+    -webkit-font-smoothing: auto;
+}
+
+code {
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    font-size: 13px;
+}
+
+p code {
+    color: #278601;
+    background-color: #f1f6ef;
+    padding: 2px 4px;
+    white-space: nowrap;
+    font-size: 14px;
+    margin: 0;
+    line-height: 24px;
 }
