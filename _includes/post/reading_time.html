@@ -5,6 +5,8 @@
 {% capture words %}
     {{ page.content | number_of_words | minus: 250 }}
 {% endcapture %}
-{% unless words contains "-" %}
+{% if words contains "-" %}
+    Less than a minute read
+{% else %}
     {{ words | plus: 250 | divided_by: 180 | append: " minute read" }}
-{% endunless %}
+{% endif %}
