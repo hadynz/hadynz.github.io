@@ -5,5 +5,7 @@
 {% endif %}
 
 <span class="comments">
-    <a class="comments-link" href="{{ post.url }}#disqus_thread"{% if disqus_identifier %} data-disqus-identifier="{{ disqus_identifier }}"{% endif %}>comments</a>
+    <b>
+        <a class="comments-link" href="{{ post.url }}#disqus_thread"{% if disqus_identifier %} data-disqus-identifier="{{ disqus_identifier }}"{% endif %}>Comments</a>
+    </b>
 </span>

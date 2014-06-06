@@ -1,3 +1,5 @@
 {% if page.categories.size > 0 %}
-    Published in {{ page.categories | join: ', ' }}
+    <span class="tags">
+        Published in {{ page.categories | join: ', ' }}
+    </span>
 {% endif %}

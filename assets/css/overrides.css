@@ -10,6 +10,14 @@ p + p {
     text-transform: none;
     font-weight: normal;
     font-size: 14px;
+
+    border-bottom: 1px solid #eee;
+    background: #f3f3f3;
+    padding: 20px 0;
+}
+
+.site-name, .top-navigation {
+    margin-bottom: 0;
 }
 
 .article-wrap p > a, .article-wrap li > a,
@@ -25,6 +33,11 @@ blockquote {
 .meta, .comments-link, .comments-link:hover, .view-all-posts {
     color: #999;
     font-size: 13px;
+}
+
+.article-author-side .bio-photo {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
 }
 
 /**
@@ -110,4 +123,10 @@ p code {
  */
 .headline-wrap {
     margin-bottom: 26px;
+}
+
+/* Post breadcrumb separator */
+.meta span:not(:last-child):after {
+    content: '/';
+    padding: 0 4px;
 }
