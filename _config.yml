@@ -1,5 +1,6 @@
 title:            hady.geek.nz
 description:      My personal voice and record of thoughts
+url: http://hady.geek.nz
 subtitle: My timeless repository of thought
 gravatar_url: https://s.gravatar.com/avatar/dfed7b315b8b380d3e72dcbda22edd4b
 
@@ -52,14 +53,14 @@ redcarpet:
   extensions: ['tables']
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /blog/:title/
+permalink: '/blog/:title/'
 paginate: 20
-paginate_path: 'page/:num'
+paginate_path: '/blog/page/:num/'
 
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
 
-include: ['.htaccess']
+include:  ['_pages']
 exclude: ['Rakefile.rb', 'Gruntfile.js', 'package.json', 'node_modules', 'Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
 safe: true
