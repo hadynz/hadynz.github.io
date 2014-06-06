@@ -6,7 +6,7 @@
     {{ page.content | number_of_words | minus: 250 }}
 {% endcapture %}
 {% if words contains "-" %}
-    Less than a minute read
+    <b>Less than a minute</b> read
 {% else %}
-    {{ words | plus: 250 | divided_by: 180 | append: " minute read" }}
+    <b>{{ words | plus: 250 | divided_by: 180 }} min</b> read
 {% endif %}

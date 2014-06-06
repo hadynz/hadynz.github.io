@@ -8,26 +8,63 @@ p + p {
 
 .navigation-wrapper {
     text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.article-wrap p > a, .article-wrap li > a,
+.article-wrap p > a:hover, .article-wrap li > a:hover {
+    border: none;
+}
+
+blockquote {
+    margin-left: -24px;
+    border-left: 4px solid #278601;
+}
+
+.meta, .comments-link, .comments-link:hover, .view-all-posts {
+    color: #999;
+    font-size: 13px;
+}
+
+/**
+ * Site-wide hyperlinks
+ */
+/* TODO: See of the chance not to use `article` and replace with a class */
+article a, article a:visited, article a:hover {
+    color: #427fed;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
 }
 
 /**
  * Site-wide font sizes
  */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+article {
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+body, .meta, .navigation-wrapper {
+    font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
 }
 
 .post-title {
     letter-spacing: -0.04em;
-    font-size: 40px;
     line-height: 1.1;
     margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #262626;
 }
 
 body {
     color: #444444;
-    font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.01rem;

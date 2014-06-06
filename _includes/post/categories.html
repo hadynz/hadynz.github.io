@@ -1,1 +1,3 @@
-{{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }}
+{% if page.categories.size > 0 %}
+    Published in {{ page.categories | join: ', ' }}
+{% endif %}
