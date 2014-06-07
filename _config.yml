@@ -5,7 +5,7 @@ subtitle: My timeless repository of thought
 gravatar_url: https://s.gravatar.com/avatar/dfed7b315b8b380d3e72dcbda22edd4b
 
 # Disqus Comments
-disqus_short_name: hadynz
+disqus_short_name: hadysblog
 disqus_show_comment_count: true
 
 # Owner/author information
@@ -63,4 +63,4 @@ gems:
 
 include:  ['_pages']
 exclude: ['Rakefile.rb', 'Gruntfile.js', 'package.json', 'node_modules', 'Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
-safe: true
+safe: false
