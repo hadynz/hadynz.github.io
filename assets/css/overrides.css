@@ -194,6 +194,7 @@ p code {
 }
 
 .biography-is-fixed {
-    position: fixed;
+    position: fixed !important;
+    margin-top: 0 !important;
     top: 40px;
 }
