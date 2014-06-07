@@ -12,15 +12,18 @@
             {% include author-bio.html %}
         </div>
         {{ content }}
-    </div>
 
-    <div class="footer-wrap">
-        {% if site.disqus_short_name and page.comments == true %}
-            {% include related_articles.html %}
-        {% endif %}
-        <footer>
-            {% include footer.html %}
-        </footer>
+        <div class="footer-wrap">
+            {% comment %}
+            {% if site.disqus_short_name and page.comments == true %}
+                {% include related_articles.html %}
+            {% endif %}
+            {% endcomment %}
+            <footer>
+                {% include footer.html %}
+            </footer>
+        </div>
+
     </div>
 
     {% include scripts.html %}

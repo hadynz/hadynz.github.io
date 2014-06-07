@@ -46,20 +46,33 @@ blockquote {
 
 .post, .page {
     margin-left: 320px;
+    margin-bottom: 40px;
     width: 50%;
+}
+
+.top-navigation li a {
+    color: #737373;
+    border-bottom: 2px solid transparent;
+    padding: 21px 0;
+}
+
+.top-navigation li a:hover {
+    transition: border-color .218s;
+    /* border-color: #427fed; */
+    color: #262626;
 }
 
 /**
  * Site-wide hyperlinks
  */
 /* TODO: See of the chance not to use `article` and replace with a class */
-article a, article a:visited, article a:hover {
+article a, article a:visited, article a:hover, .footer-wrap a, .footer-wrap a:hover {
     color: #427fed;
     cursor: pointer;
     text-decoration: none;
 }
 
-article a:hover {
+article a:hover, .footer-wrap a:hover {
     text-decoration: underline;
 }
 
@@ -182,6 +195,10 @@ p code {
 }
 
 /* Content Wrap */
+.content-wrap {
+    position: relative;
+}
+
 .content-wrap-has-feature-image .biography {
     margin-top: -100px;
     position: relative;
@@ -197,4 +214,13 @@ p code {
     position: fixed !important;
     margin-top: 0 !important;
     top: 40px;
+}
+
+/* Footer */
+.footer-wrap {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 54px;
+    width: 190px;
 }
