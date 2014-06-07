@@ -6,12 +6,7 @@
         {% include feature_image.html %}
     {% endif %}
 
-    {% if page.type == 'home' %}
-    <div>
-    {% else %}
-    <div id="main" role="main">
-    {% endif %}
-
+    <div class="content-wrapper" role="main">
         <div class="article-author-side">
             {% include author-bio.html %}
         </div>

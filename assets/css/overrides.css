@@ -134,7 +134,16 @@ p code {
     padding: 0 4px;
 }
 
+.navigation-wrapper + .content-wrapper {
+    margin-top: 32px;
+}
+
 /* Feature Image */
+.feature-image {
+    position: relative;
+    padding-bottom: 32px;
+}
+
 .feature-image--cover-photo {
     background-size: cover;
     background-position: center;
@@ -161,4 +170,6 @@ p code {
     font-style: italic;
     color: #80807e;
     line-height: 32px;
+    position: absolute;
+    bottom: 0;
 }
