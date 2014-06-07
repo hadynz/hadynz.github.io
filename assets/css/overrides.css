@@ -39,7 +39,9 @@ blockquote {
     border-radius: 8px;
     -webkit-border-radius: 8px;
     border: 4px solid white;
-    margin-left: -4px;
+    position: relative;
+    top: -4px;
+    left: -4px;
 }
 
 .post, .page {
@@ -177,6 +179,13 @@ p code {
     line-height: 32px;
     position: absolute;
     bottom: 0;
+}
+
+/* Content Wrap */
+.content-wrap-has-feature-image .biography {
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Article Author Bio */
