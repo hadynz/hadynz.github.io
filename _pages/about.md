@@ -4,7 +4,6 @@ permalink: /about/
 title: About Me
 comments: false
 ---
-
 Introduction talking about who I am...
 
 Some things I look for in the things I work on:
