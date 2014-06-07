@@ -197,6 +197,7 @@ p code {
 /* Content Wrap */
 .content-wrap {
     position: relative;
+    min-height: 550px;
 }
 
 .content-wrap-has-feature-image .biography {
