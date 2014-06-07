@@ -1,13 +1,14 @@
 {% include head.html %}
-<body class="{{page.type}}">
+<body>
     {% include navigation.html %}
 
     {% if page.image.feature %}
+        {% assign has_feature_image='content-wrap-has-feature-image' %}
         {% include feature_image.html %}
     {% endif %}
 
-    <div class="content-wrapper" role="main">
-        <div class="article-author-side">
+    <div class="content-wrap {{ has_feature_image}}" role="main">
+        <div class="article-author-side biography biography-is-fixeda">
             {% include author-bio.html %}
         </div>
         {{ content }}

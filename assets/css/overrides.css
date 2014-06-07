@@ -42,6 +42,11 @@ blockquote {
     margin-left: -4px;
 }
 
+.post, .page {
+    margin-left: 320px;
+    width: 50%;
+}
+
 /**
  * Site-wide hyperlinks
  */
@@ -134,7 +139,7 @@ p code {
     padding: 0 4px;
 }
 
-.navigation-wrapper + .content-wrapper {
+.navigation-wrapper + .content-wrap {
     margin-top: 32px;
 }
 
@@ -172,4 +177,14 @@ p code {
     line-height: 32px;
     position: absolute;
     bottom: 0;
+}
+
+/* Article Author Bio */
+.biography {
+
+}
+
+.biography-is-fixed {
+    position: fixed;
+    top: 40px;
 }
