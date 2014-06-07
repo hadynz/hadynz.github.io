@@ -1,14 +1,18 @@
-<div class="image-wrap">
-    <img src=
-                 {% if page.image.feature contains 'http://' %}
-    "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
-    "{{ page.image.feature }}"
-    {% else %}
-    "{{ site.url }}/assets/images/{{ page.image.feature }}"
-    {% endif %}
-    alt="{{ page.title }} feature image">
+{% if page.image.feature contains 'http://' or page.image.feature contains 'https://' %}
+    {% assign imagesrc = page.image.feature %}
+{% else %}
+    {% assign imagesrc = {{ site.url | append: '/assets/images/' | append: page.image.feature }}  %}
+{% endif %}
+
+<div class="feature-image">
+    <div class="feature-image--cover-photo" style="background-image: url('{{ imagesrc }}');">
+        <div class="overlay"></div>
+    </div>
     {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+        {% if page.image.creditlink %}
+            <span class="feature-image--credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+        {% else %}
+            <span class="feature-image--credit">Photo Credit: {{ page.image.credit }}</span>
+        {% endif %}
     {% endif %}
 </div>

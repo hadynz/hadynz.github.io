@@ -3,8 +3,9 @@ layout: post
 title: "Sitecore login redirecting to itself"
 date: 2013-03-21
 comments: true
-categories: [Snippet]
-tags: [Sitecore]
+categories: [Sitecore]
+image:
+  feature: covers/sitecore-cover.jpg
 ---
 **Issue**: When you login to Sitecore, the login page keeps redirecting to itself.
 
@@ -18,7 +19,7 @@ Please try to add the script like the following to the `Website\Global.asax` fil
 ```javascript
 public void FormsAuthentication_OnAuthenticate(object sender, FormsAuthenticationEventArgs args)
 {
-args.User = Sitecore.Context.User;
+   args.User = Sitecore.Context.User;
 }
 ```
 
