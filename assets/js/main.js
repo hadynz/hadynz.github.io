@@ -43,7 +43,7 @@
         $twitterPopupCloseBtn = $('.twitter-popup .twitter-popup--close-btn'),
         $window = $(window),
         documentHeight = $.getDocHeight(),
-        bottomOffsetForHide = documentHeight * 0.45,
+        bottomOffsetForHide = documentHeight * 0.40,
         bottomOffsetForShow = documentHeight * 0.10,
         bottomOffset = bottomOffsetForShow;
 
