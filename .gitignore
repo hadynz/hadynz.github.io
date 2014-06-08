@@ -1,6 +1,7 @@
 # Project folders to ignore
 _site
 node_modules
+bower_components
 
 # Windows image file caches
 Thumbs.db

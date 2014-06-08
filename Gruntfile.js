@@ -29,7 +29,11 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'dist/scripts.min.js': [
-            'assets/js/plugins/*.js',
+            'bower_components/jquery/dist/*.min.js',
+            'bower_components/jquery-throttle-debounce/*.min.js',
+            'bower_components/html5shiv/dist/html5shiv.min.js',
+            'bower_components/fitvids/*.js',
+            'bower_components/magnific-popup/dist/*.min.js',
             'assets/js/_*.js'
           ]
         }
