@@ -1,0 +1,15 @@
+#
+# Twitter Sharing popup configuration
+#
+popup:
+  title: Like it? Tweet it.
+
+twitter_share_button:
+  text_prefix: A choice read
+  size: medium
+  count: none
+  dnt: true
+
+twitter_follow_button:
+  show_count: true
+  size: medium
