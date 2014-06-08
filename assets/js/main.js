@@ -40,15 +40,16 @@
     };
 
     var $twitterPopup = $('.twitter-popup'),
+        $twitterPopupCloseBtn = $('.twitter-popup .twitter-popup--close-btn'),
         $window = $(window),
-        bottomOffset = 0;
+        documentHeight = $.getDocHeight(),
+        bottomOffsetForHide = documentHeight * 0.45,
+        bottomOffsetForShow = documentHeight * 0.10,
+        bottomOffset = bottomOffsetForShow;
 
     var togglePopupVisibility = function() {
         var windowScrollTop = $window.scrollTop(),
-            windowHeight = $window.height(),
-            documentHeight = $.getDocHeight(),
-            bottomOffsetForHide = documentHeight * 0.55,
-            bottomOffsetForShow = documentHeight * 0.12;
+            windowHeight = $window.height();
 
         if(windowScrollTop + windowHeight >= documentHeight - bottomOffset) {
             $twitterPopup.addClass('twitter-popup-is-visible');
@@ -61,7 +62,15 @@
     };
 
     if ($twitterPopup.length > 0) {
-        $window.scroll($.throttle(250, togglePopupVisibility));
+        var f = $.throttle(250, togglePopupVisibility);
+        $window.scroll(f);
+
+        $twitterPopupCloseBtn.click(function(ev){
+            ev.preventDefault();
+
+            $twitterPopup.hide();
+            $window.off('scroll', f);
+        });
     }
 
 }(jQuery));
