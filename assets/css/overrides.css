@@ -240,9 +240,8 @@ p code {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
     position: fixed;
-    display: none;
     opacity: 0;
 }
 
@@ -256,7 +255,7 @@ p code {
 
 .twitter-popup .twitter-popup--close-btn {
     float: right;
-    margin-right: 6px;
+    margin-right: 5px;
     margin-top: 3px;
     font-size: 20px;
     color: #BBB;
@@ -265,13 +264,6 @@ p code {
 
 .twitter-popup .twitter-popup--close-btn:hover {
     color: #262626;
-}
-
-.twitter-popup .close_it_bro {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    cursor: pointer;
 }
 
 .twitter-popup .twitter-popup--content {
