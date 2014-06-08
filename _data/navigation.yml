@@ -1,0 +1,17 @@
+#
+# Links to include in top navigation. For external links add external: true
+#
+- title: About
+  url: /about/
+
+- title: Posts
+  url: /blog/
+
+- title: Speaking
+  url: /speaking/
+
+- title: Contact
+  url: https://github.com/hadynz/hadynz.github.io/issues/new
+
+- title: Contributors
+  url: /contributors/
