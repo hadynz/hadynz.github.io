@@ -1,16 +1,16 @@
 <div class="meta sans-serif">
-    {% include post/categories.html %}
+    {% include post/_categories.html %}
     <span class="date">
-        {% include post/date.html %}
+        {% include post/_date.html %}
         {{ time }}
     </span>
     <span class="reading-time">
-        {% include post/reading_time.html %}
+        {% include post/_reading_time.html %}
     </span>
     {% if site.disqus_short_name and site.disqus_show_comment_count == true %}
-        {% include post/comments_link.html %}
+        {% include post/_comments_link.html %}
     {% endif %}
     <span class="edit">
-        {% include post/edit.html %}
+        {% include post/_edit.html %}
     </span>
 </div>
