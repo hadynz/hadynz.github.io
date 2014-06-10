@@ -3,22 +3,22 @@ layout: page
 type: home
 ---
 <section class="page-home">
-    <h3 class="post-title">
+    <h2 class="post-title post-title-is-page">
         <a href="/blog/">Recent Posts</a>
-    </h3>
+    </h2>
     {% for post in site.posts limit: 8 %}
         <article>
         {% if post.link %}
-            <h2 class="link-post">
+            <h3 class="link-post">
                 <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                 <a href="{{ post.link }}" target="_blank" title="{{ post.title }}">
                     <i class="icon-link"></i>
                 </a>
-            </h2>
+            </h3>
         {% else %}
-            <h2>
+            <h3>
                 <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            </h2>
+            </h3>
             <p>
             {% if post.description %}
                 {{ post.description }}

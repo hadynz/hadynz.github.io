@@ -19,28 +19,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 42px;
 }
 
-.page-home .post-title, .page-posts .post-title {
+.blog-content .post-title-is-page {
     font-size: 28px;
     padding-bottom: 14px;
     border-bottom: 1px solid #C3C3C3;
 }
 
-.page-home .post-title a, .page-posts .post-title a {
+.blog-content .post-title-is-page a {
     text-decoration: none;
     color: #262626;
 }
 
-.page-home h2, .page-posts h2 {
-    font-size: 20px;
-    margin-bottom: 4px;
-}
-
-.page-home p, .page-posts p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.blog-content--inner, .serif {
+.blog-content, .serif {
     font-family: 'Lora', serif;
     font-size: 16px;
     line-height: 1.9;
