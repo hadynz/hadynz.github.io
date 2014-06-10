@@ -2,16 +2,18 @@
 layout: page
 type: home
 ---
-<article class="page-home">
+<section class="page-home">
     <h3 class="post-title">
         <a href="/blog/">Recent Posts</a>
     </h3>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit: 8 %}
         <article>
         {% if post.link %}
             <h2 class="link-post">
                 <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="icon-link"></i>
+                <a href="{{ post.link }}" target="_blank" title="{{ post.title }}">
+                    <i class="icon-link"></i>
+                </a>
             </h2>
         {% else %}
             <h2>
@@ -27,4 +29,4 @@ type: home
         {% endif %}
         </article>
     {% endfor %}
-</article>
+</section>

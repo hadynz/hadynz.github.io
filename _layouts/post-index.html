@@ -2,6 +2,7 @@
 layout: page
 type: home
 ---
+<section class="page-posts">
 {% for post in site.posts %}
 
     {% unless post.next %}
@@ -30,3 +31,4 @@ type: home
         {% endif %}
     </article>
 {% endfor %}
+</section>

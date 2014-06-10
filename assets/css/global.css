@@ -1,4 +1,4 @@
-a:hover {
+a:hover, .post-title a:hover {
     color: #F36;
 }
 

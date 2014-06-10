@@ -17,7 +17,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-weight: 300;
     font-size: 42px;
+}
+
+.page-home .post-title, .page-posts .post-title {
+    font-size: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #C3C3C3;
+}
+
+.page-home .post-title a, .page-posts .post-title a {
+    text-decoration: none;
     color: #262626;
+}
+
+.page-home h2, .page-posts h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.page-home p, .page-posts p {
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .blog-content--inner, .serif {

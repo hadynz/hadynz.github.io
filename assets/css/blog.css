@@ -19,6 +19,10 @@
     margin-top: 40px;
 }
 
+article + .post-title {
+    margin-top: 40px;
+}
+
 /* Other */
 .meta span:not(:last-child):after {
     content: '/'; /* Post breadcrumb separator */
