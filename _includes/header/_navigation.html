@@ -1,0 +1,43 @@
+<div class="navbar navbar-defaultstyle" role="navigation">
+    <div class="row">
+
+        <div class="navbar-header col-sm-3">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="/" class="navbar-brand hidden-xs">hady.geek.nz</a>
+
+            <a href="/" class="fancylogo-wrapper visible-xs" title="hady.geek.nz">
+                <div class="fancylogo serif">
+                    <div class="fancylogo-orbit orbit1 rotate"></div>
+                    <div class="fancylogo-orbit orbit2 rotate"></div>
+                    <div class="fancylogo-orbit orbit3 rotate"></div>
+                    <div class="fancylogo-title">H</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse col-sm-9">
+            <ul class="nav navbar-nav">
+            {% for link in site.data.navigation %}
+                {% if link.external %}
+                    {% assign target = '_blank' %}
+                {% else %}
+                    {% assign target = '_self' %}
+                {% endif %}
+
+                <li>
+                    <a class="blog-nav-item" href="{{ link.url }}" target="{{ target }}">
+                        {{ link.title }}
+                    </a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</div>

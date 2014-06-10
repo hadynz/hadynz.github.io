@@ -1,0 +1,100 @@
+.fancylogo-wrapper {
+    padding: 15px 0;
+}
+
+.fancylogo-wrapper:hover {
+    text-decoration: none;
+}
+
+.fancylogo-wrapper:hover .fancylogo-orbit:after {
+    background: rgba(255, 51, 102, 0.8);
+}
+
+.fancylogo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fancylogo-title {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 32px;
+    z-index: 1;
+}
+
+.fancylogo-orbit {
+    border: 2px solid #FFF;
+    position: absolute;
+}
+
+.orbit1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.orbit2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    top: 15px;
+    left: 15px;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.orbit3 {
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    top: 23px;
+    left: 23px;
+}
+
+.fancylogo-orbit:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background: #FFF;
+}
+
+.orbit1.fancylogo-orbit:after {
+    left: -5px;
+    top: 45px;
+}
+
+.orbit2.fancylogo-orbit:after {
+    right: -5px;
+    top: 35px;
+}
+
+.orbit3.fancylogo-orbit:after {
+    left: -5px;
+    top: 25px;
+}
+
+.rotate {
+    -webkit-animation: spin 10s infinite linear;
+}
+
+.rotate.orbit1 {
+    -webkit-animation-duration: 18s;
+}
+
+.rotate.orbit2 {
+    -webkit-animation-duration: 10s;
+}
+
+.rotate.orbit3 {
+    -webkit-animation-duration: 6.2s;
+}
+
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}

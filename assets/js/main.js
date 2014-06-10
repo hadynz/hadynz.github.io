@@ -4,18 +4,22 @@
  */
 (function($){
     var $biography = $('.biography');
+    var $biographyWrapper = $('.biography-wrapper');
 
     if ($biography.length > 0) {
-        var top = $biography.offset().top - 40;;
+        var top = $biography.offset().top - 40;
 
-        $(window).scroll(function(){
+        var fixBiographyElement = function() {
             var y = $(this).scrollTop();
             if (y >= top) {
                 $biography.addClass('biography-is-fixed');
             } else {
                 $biography.removeClass('biography-is-fixed');
             }
-        });
+        };
+
+        $(window).scroll(fixBiographyElement);
+        fixBiographyElement();
     }
 
 }(jQuery));

@@ -3,15 +3,4 @@ layout: default
 type: page
 comments: false
 ---
-<article class="page">
-    <h1 class="post-title">{{ page.title }}</h1>
-
-    <div class="article-wrap">
-        {{ content }}
-    </div>
-
-    {% if site.disqus_shortname and page.comments %}
-        <section id="disqus_thread"></section>
-    {% endif %}
-
-</article>
+{{ content }}

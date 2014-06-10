@@ -1,0 +1,40 @@
+{% if page.image.feature contains 'http://' or page.image.feature contains 'https://' %}
+    {% assign imagesrc = page.image.feature %}
+{% else %}
+    {% assign imagesrc = {{ site.url | append: '/assets/images/' | append: page.image.feature }}  %}
+{% endif %}
+
+<header class="masthead" style="background-image: url('{{ imagesrc }}');">
+    <div class="masthead--mask"></div>
+    <div class="masthead--content container">
+
+        {% include header/_navigation.html %}
+
+        <div class="masthead--title row">
+            <div class="inner col-sm-9 col-sm-offset-3">
+                <h1 itemprop="name" name="title" class="post-title">
+                    {{ page.title }}
+                </h1>
+                {% include meta/meta.html %}
+            </div>
+        </div>
+
+    </div>
+
+    {% if page.image.credit or page.image.creditlink %}
+    <div class="masthead--credits hidden-xs u-truncate">
+
+        {% if page.image.credit %}
+        <div class="masthead--credits-caption">{{ page.image.credit }}</div>
+        {% endif %}
+
+        {% if page.image.creditlink %}
+        <div class="masthead--credits-link">
+            <a href="{{ page.image.creditlink }}" target="_blank">{{ page.image.creditlink }}</a>
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+</header>

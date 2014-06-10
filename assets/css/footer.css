@@ -1,0 +1,29 @@
+html {
+    position: relative;
+    min-height: 100%; /* Sticky Footer */
+}
+
+.page-footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 11px;
+    color: #999;
+}
+
+.page-footer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .page-footer {
+        text-align: left;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        bottom: 40px;
+    }
+    .page-footer--inner {
+        width: 215px;
+    }
+}

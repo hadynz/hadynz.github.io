@@ -1,0 +1,44 @@
+.biography {
+    z-index: 2;
+}
+
+.biography-is-fixed {
+    position: fixed !important;
+    margin-top: 0 !important;
+    top: 40px !important;
+}
+
+.biography--avatar img {
+    max-width: 110px;
+    border-radius: 8px;
+}
+
+.biography--whoami h3 {
+    margin: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .biography {
+        position: relative;
+        top: -70px;
+    }
+    .biography--avatar img {
+        max-width: 150px;
+        border: 4px solid #FFF;
+        position: relative;
+        top: -4px;
+        left: -4px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    .biography {
+        position: static !important;
+    }
+    .biography-wrapper {
+        background: #EEE;
+        padding: 20px;
+    }
+}

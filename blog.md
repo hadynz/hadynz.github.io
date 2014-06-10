@@ -1,6 +1,6 @@
 ---
 layout: post-index
 permalink: /blog/
-title: All Posts
+title: My Posts
 tagline: A List of Posts
 ---

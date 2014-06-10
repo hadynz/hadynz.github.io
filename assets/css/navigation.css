@@ -1,0 +1,36 @@
+.navbar-defaultstyle a {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.navbar-defaultstyle a:hover {
+    color: #F36;
+}
+
+.navbar-defaultstyle li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-defaultstyle .navbar-toggle {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-defaultstyle .navbar-toggle:hover {
+    background: #F36;
+}
+
+.navbar-defaultstyle .icon-bar {
+    background: #000;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar-defaultstyle .navbar-nav li:first-child a,
+    .navbar-defaultstyle .navbar-brand {
+        padding-left: 0;
+    }
+    .navbar-defaultstyle li a:hover {
+        background: none;   /* Override default Bootstrap styling */
+    }
+}
+

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Sitecore login redirecting to itself"
 date: 2013-03-21
 comments: true

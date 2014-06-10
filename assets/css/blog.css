@@ -1,0 +1,34 @@
+/* Main Content */
+.blog-content {
+
+}
+
+.blog-content--inner p {
+    margin: 0 0 1.625rem;
+}
+
+.blog-content--inner a {
+    text-decoration: underline;
+}
+
+.blog-content--comments {
+    margin-top: 40px;
+}
+
+/* Other */
+.meta {
+    /* TODO: Rename .meta to something else */
+    margin-bottom: 20px;
+}
+
+.meta span:not(:last-child):after {
+    content: '/'; /* Post breadcrumb separator */
+    padding: 0 4px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .blog-content-wrapper {
+        margin-bottom: 25px;
+    }
+}

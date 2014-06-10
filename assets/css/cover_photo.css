@@ -1,0 +1,33 @@
+.feature-image {
+    min-height: 250px;
+    position: relative;
+}
+
+.feature-image--cover-photo {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.feature-image--cover-photo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: darkcyan;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.feature-image--credit {
+    display: block;
+    width: 75%;
+    text-align: right;
+    font-size: 11.5px;
+    font-style: italic;
+    color: #80807e;
+    line-height: 32px;
+    position: absolute;
+    bottom: 0;
+}

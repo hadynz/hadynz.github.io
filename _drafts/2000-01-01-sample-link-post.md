@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Sample Link Post"
 description: "Example and code for using link posts."
 tags: [sample post, link post]

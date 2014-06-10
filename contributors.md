@@ -2,9 +2,7 @@
 layout: page
 permalink: /contributors/
 title: "Contributors"
-date: 2014-05-10
 comments: false
-sharing: false
 ---
 
 These lovely people have contributed a fix to my blog. If you want

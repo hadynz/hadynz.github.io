@@ -1,0 +1,28 @@
+a:hover {
+    color: #F36;
+}
+
+blockquote {
+    border-left-color: #F36;
+    font-style: italic;
+}
+
+/* Utility functions */
+.u-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Visible / Hide Bootstrap utility that is Inline instead of Block */
+@media screen and (max-width: 768px) {
+    .visible-xs-inline {
+        display: inline-block; !important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .visible-xs-inline {
+        display: none; !important
+    }
+}
