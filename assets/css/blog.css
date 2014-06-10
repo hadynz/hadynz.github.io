@@ -3,6 +3,10 @@
 
 }
 
+.blog-content--inner {
+    overflow-x: hidden;
+}
+
 .blog-content--inner p {
     margin: 0 0 1.625rem;
 }
