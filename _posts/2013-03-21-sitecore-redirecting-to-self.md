@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Sitecore login redirecting to itself"
 date: 2013-03-21
-comments: true
 categories: [Sitecore]
 image:
   feature: covers/sitecore-cover.jpg
