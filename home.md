@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page-home
 title: Hi, I'm Hady
 permalink: /
 image:
