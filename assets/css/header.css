@@ -28,11 +28,16 @@
 
 .masthead--title .inner {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 .masthead--content .post-title {
     color: #FFF;
+    margin-bottom: 0;
+}
+
+.masthead--content .post-title + .meta {
+    margin-top: 10px;
 }
 
 .masthead--content .meta {

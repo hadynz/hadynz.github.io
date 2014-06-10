@@ -16,11 +16,6 @@
 }
 
 /* Other */
-.meta {
-    /* TODO: Rename .meta to something else */
-    margin-bottom: 20px;
-}
-
 .meta span:not(:last-child):after {
     content: '/'; /* Post breadcrumb separator */
     padding: 0 4px;
