@@ -4,8 +4,18 @@
     {% assign imagesrc = {{ site.url | append: '/assets/images/' | append: page.image.feature }}  %}
 {% endif %}
 
-<header class="masthead" style="background-image: url('{{ imagesrc }}');">
+{% if page.image %}
+    {% capture background_image_style %}
+    style="background-image: url('{{ imagesrc }}');"
+    {% endcapture %}
+    {% assign hasBackgroundImage = 'masthead-has-bg-image' %}
+{% endif %}
+
+<header class="masthead {{ hasBackgroundImage }}" {{ background_image_style }}>
+
+    <!-- TODO: Only show mask when we know an image exists to be displayed -->
     <div class="masthead--mask"></div>
+
     <div class="masthead--content container">
 
         <!-- Logo and Site Navigation -->
