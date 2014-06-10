@@ -7,11 +7,17 @@
 
     <div class="row">
 
+        {% if page.large_header or page.image %}
+            {% assign hasLargeHeader = true %}
+        {% else %}
+            {% assign hasLargeHeader = false %}
+        {% endif %}
+
         <!-- Main page content -->
         <div class="blog-content col-sm-9 col-sm-push-3 col-md-8 col-md-push-3 col-lg-7 col-lg-push-3">
             <div class="blog-content--inner">
 
-                {% if page.large_header == false and page.image == null %}
+                {% if hasLargeHeader == false %}
                 <div class="title">
                     {% include post/_title.html %}
                 </div>
@@ -23,7 +29,7 @@
 
         <!-- Personal Biography -->
         <div class="biography-wrapper col-sm-3 col-sm-pull-9 col-md-3 col-md-pull-8 col-lg-3 col-lg-pull-7">
-            {% include biography.html %}
+            {% include biography.html hasLargeHeader=hasLargeHeader %}
         </div>
 
     </div>

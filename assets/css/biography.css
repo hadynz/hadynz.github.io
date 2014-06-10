@@ -19,7 +19,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .biography {
+    .biography.biography-has-header {
         position: relative;
         top: -70px;
     }

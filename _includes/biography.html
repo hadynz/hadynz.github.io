@@ -1,4 +1,8 @@
-<div class="biography">
+{% if include.hasLargeHeader %}
+    {% assign headerClass = 'biography-has-header' %}
+{% endif %}
+
+<div class="biography {{ headerClass }}">
     <div class="row">
 
         <div class="biography--avatar col-xs-4 col-sm-12">
