@@ -1,3 +1,7 @@
+.navbar-defaultstyle {
+    margin-bottom: 0;
+}
+
 .navbar-defaultstyle a {
     color: #FFF;
     font-size: 18px;

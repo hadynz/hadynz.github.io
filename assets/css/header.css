@@ -20,15 +20,8 @@
 }
 
 .masthead--title {
-    margin-top: 60px;
     margin-bottom: 10px;
     position: relative;
-    min-height: 140px;
-}
-
-.masthead--title .inner {
-    position: absolute;
-    bottom: 10px;
 }
 
 .masthead--content .post-title {
@@ -59,4 +52,16 @@
 
 .masthead--credits-link {
     font-size: 12px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .masthead--title {
+        margin-top: 60px;
+        min-height: 140px;
+    }
+    .masthead--title .inner {
+        position: absolute;
+        bottom: 10px;
+    }
 }
