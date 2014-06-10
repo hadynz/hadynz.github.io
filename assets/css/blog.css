@@ -11,6 +11,20 @@
     margin: 0 0 1.625rem;
 }
 
+.blog-content--inner .title {
+    margin-bottom: 26px;
+}
+
+.blog-content--inner .title .post-title {
+    font-size: 34px;
+    margin-bottom: 0;
+}
+
+.blog-content--inner .title .meta {
+    color: #999;
+    margin-top: 5px;
+}
+
 .blog-content--inner a {
     text-decoration: underline;
 }
@@ -24,6 +38,11 @@ article + .post-title {
 }
 
 /* Other */
+.meta {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 .meta span:not(:last-child):after {
     content: '/'; /* Post breadcrumb separator */
     padding: 0 4px;

@@ -10,6 +10,13 @@
         <!-- Main page content -->
         <div class="blog-content col-sm-9 col-sm-push-3 col-md-8 col-md-push-3 col-lg-7 col-lg-push-3">
             <div class="blog-content--inner">
+
+                {% if page.large_header == false and page.image == null %}
+                <div class="title">
+                    {% include post/_title.html %}
+                </div>
+                {% endif %}
+
                 {{ content }}
             </div>
         </div>

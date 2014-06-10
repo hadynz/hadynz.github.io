@@ -29,10 +29,6 @@
     margin-bottom: 0;
 }
 
-.masthead--content .post-title + .meta {
-    margin-top: 10px;
-}
-
 .masthead--content .meta {
     color: #BDBDBD;
 }

@@ -47,14 +47,15 @@ defaults:
     scope:
       path: '' # empty string for all files
     values:
-      comments: true
-      meta: true
+      comments: false
+      meta: false
+      large_header: false
 
-  # ALL Pages
+  # ALL Posts
   -
     scope:
       path: ''
-      type: "page"
+      type: "post"
     values:
-      comments: false
-      meta: false
+      comments: true
+      meta: true
