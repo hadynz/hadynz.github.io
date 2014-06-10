@@ -38,3 +38,22 @@ paginate_path: '/blog/page/:num/'
 
 exclude: ['Rakefile.rb', 'Gruntfile.js', 'package.json', 'node_modules', 'README.md', 'CNAME', 'bower_components']
 safe: true
+
+# Site Defaults
+defaults:
+
+  # ALL Website (Pages, Posts and Drafts)
+  -
+    scope:
+      path: '' # empty string for all files
+    values:
+      meta: true
+
+  # ALL Pages
+  -
+    scope:
+      path: ''
+      type: "page"
+    values:
+      comments: false
+      meta: false
