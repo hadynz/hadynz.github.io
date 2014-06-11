@@ -2,7 +2,7 @@
 layout: post
 title: "Sitecore login redirecting to itself"
 date: 2013-03-21
-categories: [Sitecore]
+categories: ['blog']
 image:
   feature: covers/sitecore-cover.jpg
 ---

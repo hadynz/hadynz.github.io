@@ -3,6 +3,7 @@ layout: post
 title: "Sample Link Post"
 link: http://www.google.com
 description: "Example and code for using link posts."
+categories: ['blog']
 tags: [sample post, link post]
 ---
 

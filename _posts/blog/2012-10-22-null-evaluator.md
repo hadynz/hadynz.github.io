@@ -2,7 +2,7 @@
 layout: post
 title: "Null Evaluator"
 date: 2012-10-22 -1726
-categories: [snippet]
+categories: ['blog']
 ---
 
 ```csharp
