@@ -29,19 +29,18 @@
 .fancylogo-orbit {
     border: 2px solid #FFF;
     position: absolute;
+    border-radius: 100%;
 }
 
 .orbit1 {
     width: 100px;
     height: 100px;
-    border-radius: 50px;
     border-color: rgba(255, 255, 255, 0.3);
 }
 
 .orbit2 {
     width: 70px;
     height: 70px;
-    border-radius: 35px;
     top: 15px;
     left: 15px;
     border-color: rgba(255, 255, 255, 0.7);
@@ -50,7 +49,6 @@
 .orbit3 {
     width: 54px;
     height: 54px;
-    border-radius: 27px;
     top: 23px;
     left: 23px;
 }
