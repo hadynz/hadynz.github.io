@@ -3,6 +3,10 @@
     overflow-x: hidden;
 }
 
+.blog-content--inner a:not(.btn) {
+    text-decoration: underline;
+}
+
 .blog-content--inner p {
     margin: 0 0 1.625rem;
 }
@@ -19,10 +23,6 @@
 .blog-content--inner .title .meta {
     color: #999;
     margin-top: 5px;
-}
-
-.blog-content--inner a {
-    text-decoration: underline;
 }
 
 .blog-content--comments {
