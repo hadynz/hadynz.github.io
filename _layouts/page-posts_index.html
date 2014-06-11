@@ -16,19 +16,21 @@ type: home
         {% endif %}
     {% endunless %}
 
-    <article>
+    <article class="page-posts--article">
         {% if post.link %}
-            <h3 class="link-post">
-                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            <h4 class="heading link-post">
+                <a class="title-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                 <a href="{{ post.link }}" target="_blank" title="{{ post.title }}">
                     <i class="icon-link"></i>
                 </a>
-            </h3>
+            </h4>
         {% else %}
-            <h3>
-                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            </h3>
-            <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+            <h4 class="heading">
+                <a class="title-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </h4>
+            <p class="excerpt">
+                {% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+            </p>
         {% endif %}
     </article>
 {% endfor %}
