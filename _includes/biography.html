@@ -13,11 +13,12 @@
             {% endif %}
         </div>
 
-        <div class="col-xs-8 col-sm-12">
-
+        <div class="col-xs-7 col-sm-10">
             <div class="biography--whoami">
-                <h3>{{ site.owner.name }}</h3>
-                <p>{{ site.owner.bio }}</p>
+                {% if site.data.biography.title %}
+                    <h3>{{ site.data.biography.title }}</h3>
+                {% endif %}
+                {{ site.data.biography.bio }}
             </div>
 
             <div class="biography--twitter">
