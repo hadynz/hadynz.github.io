@@ -4,7 +4,7 @@
     <span class="reading-time">
         {% include meta/_reading_time.html %}
     </span>
-    {% if site.disqus_short_name and site.disqus_show_comment_count == true %}
+    {% if site.widget.disqus.short_name and site.widget.disqus.show_comment_count == true %}
         {% include meta/_comments_link.html %}
     {% endif %}
     <span class="edit">

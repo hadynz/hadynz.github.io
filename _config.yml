@@ -13,17 +13,17 @@ owner:
   facebook: hady.osman
   linkedin: hadyosman
 
-# Disqus Comments
-disqus_short_name: hadysblog
-disqus_show_comment_count: true
+# Widget information
+widget:
+  # Discuss
+  disqus:
+    short_name: hadysblog
+    show_comment_count: true
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-
-# Github repositories
-github_user: hadynz
-github_repo_url: https://github.com/hadynz/hadynz.github.io/
+  # Google Analytics
+  google_analytics:
+    tracking_id: UA-1572641-7
+    view_name: hady.geek.nz
 
 # Jekyll Settings
 timezone: Pacific/Auckland
