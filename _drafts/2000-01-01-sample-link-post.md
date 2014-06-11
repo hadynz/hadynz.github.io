@@ -4,6 +4,8 @@ title: "Sample Link Post"
 link: http://www.google.com
 description: "Example and code for using link posts."
 categories: ['blog']
+comments: true
+meta: true
 tags: [sample post, link post]
 ---
 

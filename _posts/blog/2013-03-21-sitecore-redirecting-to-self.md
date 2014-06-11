@@ -3,6 +3,8 @@ layout: post
 title: "Sitecore login redirecting to itself"
 date: 2013-03-21
 categories: ['blog']
+comments: true
+meta: true
 image:
   feature: covers/sitecore-cover.jpg
 ---

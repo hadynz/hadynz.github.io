@@ -3,6 +3,8 @@ layout: post
 title: "Testing Readability with a Bunch of Text"
 description: "A ton of text to test readability."
 categories: ['blog']
+comments: true
+meta: true
 tags: [sample post, readability, test]
 ---
 
