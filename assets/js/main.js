@@ -6,6 +6,11 @@
     var $biography = $('.biography');
     var $biographyWrapper = $('.biography-wrapper');
 
+    // A Safari-only check to implement an unfortunate hack
+    var isSafari = function() {
+        return /constructor/i.test(window.HTMLElement);
+    };
+
     if ($biography.length > 0) {
         var top = $biography.offset().top - 40;
 
@@ -13,8 +18,10 @@
             var y = $(this).scrollTop();
             if (y >= top) {
                 $biography.addClass('biography-is-fixed');
+                $biographyWrapper.filter(isSafari).css('width', '100%');
             } else {
                 $biography.removeClass('biography-is-fixed');
+                $biographyWrapper.filter(isSafari).css('width', '');
             }
         };
 
