@@ -32,6 +32,7 @@ future:      true
 permalink: '/:categories/:title/'
 exclude: ['Rakefile.rb', 'Gruntfile.js', 'package.json', 'node_modules', 'README.md', 'CNAME', 'bower_components']
 safe: true
+markdown: kramdown
 
 # Site Defaults
 defaults:
