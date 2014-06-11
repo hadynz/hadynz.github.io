@@ -29,9 +29,6 @@ github_repo_url: https://github.com/hadynz/hadynz.github.io/
 # Jekyll Settings
 timezone: Pacific/Auckland
 future:      true
-markdown: redcarpet
-redcarpet:
-  extensions: ['tables']
 permalink: '/blog/:title/'
 paginate: 20
 paginate_path: '/blog/page/:num/'

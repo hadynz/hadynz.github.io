@@ -78,7 +78,7 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 | cell4   | cell5   | cell6   |
 |=====
 | Foot1   | Foot2   | Foot3
-{: rules="groups"}
+{:.table}
 
 ## Code Snippets
 
