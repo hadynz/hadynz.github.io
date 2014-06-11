@@ -19,9 +19,15 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .biography-is-fixed {
+        width: 160px;
+    }
     .biography.biography-has-header {
         position: relative;
         top: -70px;
+    }
+    .biography--whoami {
+        margin: 20px 0;
     }
     .biography--avatar img {
         border: 4px solid #FFF;
@@ -33,8 +39,18 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 992px) {
+    .biography-is-fixed {
+        width: 210px;
+    }
     .biography--avatar img {
         max-width: 150px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .biography-is-fixed {
+        width: 260px;
     }
 }
 
