@@ -7,10 +7,6 @@
     text-decoration: underline;
 }
 
-.blog-content--inner p {
-    margin: 0 0 1.625rem;
-}
-
 .blog-content--inner .title {
     margin-bottom: 26px;
 }
