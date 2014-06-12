@@ -1,3 +1,4 @@
+{% if site.data.twitter_share.popup.active %}
 <div class="twitter-popup hidden-xs">
     <a href="#" class="twitter-popup--close-btn" title="Close">
         <i class="icon-close"></i>
@@ -20,3 +21,4 @@
         <img src="{{ site.url }}/assets/images/{{ site.owner.avatar }}">
     </footer>
 </div>
+{% endif %}

@@ -2,6 +2,7 @@
 # Twitter Sharing popup configuration
 #
 popup:
+  active: false
   title: Like it? Tweet it.
 
 twitter_share_button:
