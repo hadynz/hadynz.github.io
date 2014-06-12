@@ -1,6 +1,8 @@
 .masthead {
     position: relative;
     margin-bottom: 30px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .masthead--content {
