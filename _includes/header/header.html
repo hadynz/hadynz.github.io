@@ -3,18 +3,16 @@
 {% else %}
     {% assign imagesrc = {{ site.url | append: '/assets/images/' | append: page.image.feature }}  %}
 {% endif %}
-
 {% if page.image %}
     {% capture background_image_style %}
-    style="background-image: url('{{ imagesrc }}');"
+        background-image: url('{{ imagesrc }}');
     {% endcapture %}
     {% assign hasBackgroundImage = 'masthead-has-bg-image' %}
 {% endif %}
-
-<header class="masthead {{ hasBackgroundImage }}" {{ background_image_style }}>
+<header class="masthead {{ hasBackgroundImage }}" style="{{ background_image_style }}{{ page.image.bg_style }}">
 
     <!-- TODO: Only show mask when we know an image exists to be displayed -->
-    <div class="masthead--mask"></div>
+    <div class="masthead--mask" style="{{ page.image.mask_style }}"></div>
 
     <div class="masthead--content container">
 
@@ -23,7 +21,7 @@
 
         <!-- Optional Cover photo for page -->
         {% if page.large_header or page.image %}
-        <div class="masthead--title row">
+        <div class="masthead--title row" style="{{ page.image.title_style }}">
             <div class="inner col-sm-9 col-sm-offset-3">
                 {% include post/_title.html %}
             </div>
