@@ -2,19 +2,19 @@
  * Conditional fixing the position of my personal biography
  * section when a user scrolls down the page
  */
-(function($){
+jQuery(function($) {
     var $biography = $('.biography');
     var $biographyWrapper = $('.biography-wrapper');
 
     // A Safari-only check to implement an unfortunate hack
-    var isSafari = function() {
+    var isSafari = function () {
         return /constructor/i.test(window.HTMLElement);
     };
 
     if ($biography.length > 0) {
         var top = $biography.offset().top - 40;
 
-        var fixBiographyElement = function() {
+        var fixBiographyElement = function () {
             var y = $(this).scrollTop();
             if (y >= top) {
                 $biography.addClass('biography-is-fixed');
@@ -28,8 +28,7 @@
         $(window).scroll(fixBiographyElement);
         fixBiographyElement();
     }
-
-}(jQuery));
+});
 
 /**
  * Conditional display of the twitter share popup when a user scrolls
@@ -39,10 +38,10 @@
  * scroll back up, the popup hides after a much larger offset to give
  * more visual time to the popup as possible and entice the user to click!
  */
-(function($){
+jQuery(function($){
 
     // Return the actual document height
-    $.getDocHeight = function(){
+    $.getDocHeight = function () {
         return Math.max(
             $(document).height(),
             $(window).height(),
@@ -58,11 +57,11 @@
         bottomOffsetForShow = documentHeight * 0.10,
         bottomOffset = bottomOffsetForShow;
 
-    var togglePopupVisibility = function() {
+    var togglePopupVisibility = function () {
         var windowScrollTop = $window.scrollTop(),
             windowHeight = $window.height();
 
-        if(windowScrollTop + windowHeight >= documentHeight - bottomOffset) {
+        if (windowScrollTop + windowHeight >= documentHeight - bottomOffset) {
             $twitterPopup.addClass('twitter-popup-is-visible');
             bottomOffset = bottomOffsetForHide;
         }
@@ -76,7 +75,7 @@
         var f = $.throttle(250, togglePopupVisibility);
         $window.scroll(f);
 
-        $twitterPopupCloseBtn.click(function(ev){
+        $twitterPopupCloseBtn.click(function (ev) {
             ev.preventDefault();
 
             $twitterPopup.hide();
@@ -84,4 +83,24 @@
         });
     }
 
-}(jQuery));
+});
+
+/**
+ * Track twitter events with Google Analytics
+ */
+jQuery(function($){
+    var pageTitle = $('meta[name=title]').attr('content'),
+        pageUrl = $('meta[name=page_url]').attr('content');
+
+    twttr.ready(function (twttr) {
+
+        twttr.events.bind('follow', function(event) {
+            ga('send', 'social', 'twitter', 'follow', event.data.screen_name, { 'page': pageUrl });
+        });
+
+        twttr.events.bind('tweet', function(event) {
+            ga('send', 'social', 'twitter', 'tweet', pageTitle, { 'page': pageUrl });
+        });
+
+    });
+});

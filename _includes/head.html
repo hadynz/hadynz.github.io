@@ -1,18 +1,25 @@
+{% if page.permalink == '/' %}
+    {% assign title = 'Home' %}
+{% else %}
+    {% assign title = page.title %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ site.title }}{% if page.title %} &#8211; {{ page.title }}{% endif %}</title>
+    <title>{{ site.title }} &#8211; {{ title }}</title>
 
     <meta charset="utf-8">
-    <meta name="author" content="{{ site.author }}">
+    <meta name="title" content="{{ title }}">
+    <meta name="author" content="{{ site.owner.name }}">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ page.tags|join:', '}}{% endif %}">
+    <meta name="page_url" content="{{ page.url }}">
     <meta http-equiv="cleartype" content="on">
 
     <!-- Facebook: Open Graph -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
