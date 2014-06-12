@@ -5,10 +5,6 @@
 <!-- JavaScript: Twitter -->
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 
-{% if site.widget.google_analytics %}
-    {% include scripts/_google_analytics.html %}
-{% endif %}
-
 {% if site.widget.disqus.short_name and page.comments %}
     {% include scripts/_disqus.html %}
 {% endif %}
