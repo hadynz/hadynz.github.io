@@ -1,11 +1,11 @@
 ---
 layout: page-posts_index
-title: Hi, I'm Hady
+title: It’s easy to focus optimising code for technology,<br/>that we forget to optimise code for <span class="emphasis">people</span>
 permalink: /
 image:
-  feature: texture-feature-01.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: covers/cathedral-cove.jpg
+  bg_style: 'background-position: 0 83%;'
+  credit: Inspired by<br/><a href="http://humanjavascript.com" target="_blank">Human JavaScript</a>
 ---
 <div class="title">
     <h1 itemprop="name" name="title" class="post-title post-title-is-page">
