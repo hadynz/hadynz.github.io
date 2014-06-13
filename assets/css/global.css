@@ -3,8 +3,24 @@ a:hover, .post-title a:hover, #disqus_thread a {
 }
 
 blockquote {
+    position: relative;
     border-left-color: #F36;
     font-style: italic;
+    padding-top: 30px;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+blockquote:before {
+    content: '\201C';
+    font-family: Arial;
+    font-size: 75px;
+    font-style: normal;
+    position: absolute;
+    top: -27px;
+    height: 120px;
+    color: #F36;
 }
 
 /* Utility functions */
