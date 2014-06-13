@@ -1,6 +1,6 @@
 ---
 layout: page-posts_index
-title: It’s easy to focus optimising code for technology,<br/>that we forget to optimise code for <span class="emphasis">people</span>
+title: It’s easy to focus optimising code for technology<br/>that we forget to optimise code for <span class="emphasis">people</span>
 permalink: /
 image:
   feature: covers/cathedral-cove.jpg
