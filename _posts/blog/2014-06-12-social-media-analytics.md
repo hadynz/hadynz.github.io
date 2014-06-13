@@ -36,6 +36,12 @@ end
 ~~~
 {: .language-ruby}
 
+{% highlight python %}
+def yourfunction():
+     print "Hello World!"
+{% endhighlight %}
+
+
 # Twitter API object
 `window.twttr = (function(){ ... });`
 
