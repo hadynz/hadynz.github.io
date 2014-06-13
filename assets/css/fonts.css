@@ -36,7 +36,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.9;
 }
 
-.CodeRay code, .CodeRay kbd, .CodeRay pre, .CodeRay samp {
+code {
     font-family: 'Source Code Pro';
+}
+
+/* Code Ray */
+.CodeRay code, .CodeRay kbd, .CodeRay pre, .CodeRay samp {
     word-wrap: normal;
+}
+
+/* Pygments */
+.highlight pre {
+    word-wrap: normal;
+}
+
+.highlight code {
+    white-space: pre;
 }

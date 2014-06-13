@@ -8,4 +8,5 @@
 @import url("global.css");
 @import url("navigation.css");
 @import url("fancylogo.css");
-@import url("coderay_github.css");
+/*@import url("coderay_github.css");*/
+@import url("pygments_github.css");

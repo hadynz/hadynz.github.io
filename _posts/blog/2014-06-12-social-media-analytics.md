@@ -19,7 +19,7 @@ My first post!
 * Surprised to find lack of a concise guide on how to set something that is considered recently standard
 
 # Setting up Twitter widgets
-~~~ html
+{% highlight html %}
 <div class="biography--twitter">
     <a href="https://twitter.com/@handle" class="twitter-follow-button"
        data-show-screen-name="true"
@@ -27,29 +27,16 @@ My first post!
 </div>
 
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-~~~
-
-~~~
-def what?
-  42
-end
-~~~
-{: .language-ruby}
-
-{% highlight python %}
-def yourfunction():
-     print "Hello World!"
 {% endhighlight %}
-
 
 # Twitter API object
 `window.twttr = (function(){ ... });`
 
-~~~ javascript
+{% highlight javascript %}
 twttr.ready(function (twttr) {
     // bind events here
 });
-~~~
+{% endhighlight %}
 
 Events we can listen to are like `tweet`, `followed`, `retweet`, `favorite`, etc.
 
@@ -63,11 +50,11 @@ page load, but after the DOM has completely loaded. This will mean that we will 
 binding code with a document ready clause.
 
 #### Using JQuery
-~~~ javascript
+{% highlight javascript %}
 $(document).ready(function(){
     ...
 });
-~~~
+{% endhighlight %}
 
 * Fan of using pure JavaScript, you will need something like a `window.onload`, however, as this 
 [Stackoverflow thread](http://stackoverflow.com/a/800010) 
@@ -78,7 +65,7 @@ illustrates its not as simple and you are better off using a framework thatdoes 
 * talk about the different in recent GA versions
 
 # Putting it all together
-~~~ javascript
+{% highlight javascript %}
 $(document).ready(function(){
     var pageTitle = $('meta[name=title]').attr('content'),
         pageUrl = $('meta[name=page_url]').attr('content');
@@ -95,4 +82,4 @@ $(document).ready(function(){
 
     });
 });
-~~~
+{% endhighlight %}
