@@ -29,14 +29,12 @@ My first post!
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 ~~~
 
-    <div class="biography--twitter">
-        <a href="https://twitter.com/@handle" class="twitter-follow-button"
-            data-show-screen-name="true"
-            data-size="large">Follow @handle</a>
-    </div>
-    
-    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-{:lang="html"}
+~~~
+def what?
+  42
+end
+~~~
+{: .language-ruby}
 
 # Twitter API object
 `window.twttr = (function(){ ... });`
