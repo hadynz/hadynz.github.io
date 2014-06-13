@@ -5,6 +5,7 @@ permalink: /
 image:
   feature: covers/cathedral-cove.jpg
   bg_style: 'background-position: 0 83%;'
+  mask_style: 'opacity: 0.6;'
   credit: Inspired by<br/><a href="http://humanjavascript.com" target="_blank">Human JavaScript</a>
 ---
 <div class="title">
