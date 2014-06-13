@@ -1,11 +1,22 @@
 .biography {
     z-index: 2;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
 }
 
 .biography-is-fixed {
     position: fixed !important;
     margin-top: 0 !important;
     top: 40px !important;
+    opacity: 0.2;
+}
+
+.biography-is-fixed:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
 }
 
 .biography--avatar img {
