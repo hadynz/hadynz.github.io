@@ -1,4 +1,4 @@
-a:hover, .post-title a:hover {
+a:hover, .post-title a:hover, #disqus_thread a {
     color: #F36;
 }
 
