@@ -12,8 +12,20 @@ image:
 comments: true
 meta: true
 ---
-My first post!
+So after I built my sparkling new [Jekyll](http://www.jekyllrb.com)-based blog and wired up the usual third 
+party widgets such as [Disqus](http://www.disqus.com) and [Twitter buttons](https://dev.twitter.com/docs/tfw), 
+I wired up Google Analytics to ensure that I start recording analytics on the website and get a better understanding 
+of the blog's traffic.
 
+When it came to wiring up Google Analytics with social media on the blog (and namely the Twitter
+follow and tweet buttons), I was surprised that a simple google did not return a concise walk through of
+how this should be done given how social media has become a mainstream medium for many businesses in this day and age.
+
+Although the process is relatively straight forward, I decided to write a quick blog post on how I ended up putting 
+it all together. To be honest, I am currently still brand new to the blogging sphere and thought this could be something 
+straight forward to get me started to get my learning and thoughts out there.
+
+# The importance of tracking social media
 
 * Importance of tracking analytics
 * Surprised to find lack of a concise guide on how to set something that is considered recently standard
@@ -67,11 +79,13 @@ illustrates its not as simple and you are better off using a framework thatdoes 
 # Putting it all together
 {% highlight javascript %}
 $(document).ready(function(){
+
+    // Extract your page title and URL from your document in any method. Following is one example:
     var pageTitle = $('meta[name=title]').attr('content'),
         pageUrl = $('meta[name=page_url]').attr('content');
 
     twttr.ready(function (twttr) {
-
+    
         twttr.events.bind('follow', function(event) {
             ga('send', 'social', 'twitter', 'follow', event.data.screen_name, { 'page': pageUrl });
         });
@@ -79,7 +93,7 @@ $(document).ready(function(){
         twttr.events.bind('tweet', function(event) {
             ga('send', 'social', 'twitter', 'tweet', pageTitle, { 'page': pageUrl });
         });
-
+        
     });
 });
 {% endhighlight %}
