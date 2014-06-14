@@ -32,14 +32,14 @@
 
     <!-- Display Caption and URL for any cover photo images being used -->
     {% if page.image.credit or page.image.creditlink %}
-    <div class="masthead--credits hidden-xs u-truncate">
+    <div class="masthead--credits hidden-xs u-truncate u-secondary">
 
         {% if page.image.credit %}
         <div class="masthead--credits-caption">{{ page.image.credit }}</div>
         {% endif %}
 
         {% if page.image.creditlink %}
-        <div class="masthead--credits-link u-truncate">
+        <div class="masthead--credits-link u-truncate u-secondary">
             <a href="{{ page.image.creditlink }}" target="_blank">{{ page.image.creditlink }}</a>
         </div>
         {% endif %}

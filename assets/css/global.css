@@ -24,10 +24,23 @@ blockquote:before {
 }
 
 /* Utility functions */
+.u-secondary {
+    color: #B1ADAD;
+}
+
+.u-tertiary {
+    color: #999;
+}
+
 .u-truncate {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.u-dash:before {
+    content: '\2014';
+    margin-right: 2px;
 }
 
 /* Visible / Hide Bootstrap utility that is Inline instead of Block */

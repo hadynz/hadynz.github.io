@@ -26,6 +26,10 @@
     position: relative;
 }
 
+.masthead--title .quote {
+    font-size: 14px;
+}
+
 .masthead--content .post-title {
     color: #FFF;
     margin-bottom: 0;
@@ -37,16 +41,13 @@
 
 .masthead--credits {
     position: absolute;
-    bottom: 10px;
-    right: 12px;
+    top: 16px;
+    right: 20px;
     z-index: 2;
     max-width: 200px;
     text-align: right;
     font-size: 12px;
-}
-
-.masthead--credits, .masthead--credits-link a {
-    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
 }
 
 .masthead--credits-link {
