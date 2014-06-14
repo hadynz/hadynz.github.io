@@ -2,25 +2,21 @@ a:hover, .post-title a:hover, #disqus_thread a {
     color: #F36;
 }
 
-blockquote {
-    position: relative;
-    border-left-color: #F36;
-    font-style: italic;
-    padding-top: 30px;
-    line-height: 1.5;
-    font-size: 15px;
-    margin-top: 18px;
+/* Quote */
+.quote {
+    font-size: 13px;
+    line-height: 1.8;
+    -webkit-font-smoothing: initial;
+    width: 70%;
+    float: right;
+    text-align: right;
+    padding: 0;
+    border: none;
 }
 
-blockquote:before {
-    content: '\201C';
-    font-family: Arial;
-    font-size: 75px;
-    font-style: normal;
-    position: absolute;
-    top: -27px;
-    height: 120px;
-    color: #F36;
+.quote--footer {
+    font-size: inherit;
+    line-height: inherit;
 }
 
 /* Utility functions */

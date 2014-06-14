@@ -22,6 +22,31 @@
     margin-top: 5px;
 }
 
+.blog-content--inner-article {
+    clear: both;
+}
+
+.blog-content--inner-article blockquote {
+    position: relative;
+    border-left-color: #F36;
+    font-style: italic;
+    padding-top: 30px;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+.blog-content--inner-article blockquote:before {
+    content: '\201C';
+    font-family: Arial;
+    font-size: 75px;
+    font-style: normal;
+    position: absolute;
+    top: -27px;
+    height: 120px;
+    color: #F36;
+}
+
 .blog-content--comments {
     margin-top: 40px;
 }

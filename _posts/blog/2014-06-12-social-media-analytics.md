@@ -11,6 +11,10 @@ image:
   mask_style:  'opacity: 0.25;'
 comments: true
 meta: true
+quote:
+    text: In an age of constant live connections, the central question of self-examination is drifting from 'Who are you?' towards 'What are you doing?'
+    title: How to Thrive in the Digital Age
+    author: Tom Chatfield
 ---
 So after I built my sparkling new [Jekyll](http://www.jekyllrb.com)-based blog and wired up the usual third 
 party widgets such as [Disqus](http://www.disqus.com) and [Twitter buttons](https://dev.twitter.com/docs/tfw), 
@@ -25,7 +29,13 @@ Although the process is relatively straight forward, I decided to write a quick 
 it all together. To be honest, I am currently still brand new to the blogging sphere and thought this could be something 
 straight forward to get me started to get my learning and thoughts out there.
 
+To skip this write-up right to the final solution [click here](#putting-it-all-together).
+{: .alert.alert-warning }
+
 # The importance of tracking social media
+
+
+
 
 * Importance of tracking analytics
 * Surprised to find lack of a concise guide on how to set something that is considered recently standard
@@ -78,6 +88,7 @@ illustrates its not as simple and you are better off using a framework thatdoes 
 
 # Putting it all together
 {% highlight javascript %}
+/*global $, twttr, ga */
 $(document).ready(function(){
 
     // Extract your page title and URL from your document in any method. Following is one example:

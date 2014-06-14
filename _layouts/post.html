@@ -2,7 +2,10 @@
 layout: default
 type: post
 ---
-<article>
+{% if page.quote %}
+    {% include post/_quote.html %}
+{% endif %}
+<article class="blog-content--inner-article">
     {{ content }}
 </article>
 
