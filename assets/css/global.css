@@ -19,6 +19,32 @@ a:hover, .post-title a:hover, #disqus_thread a {
     line-height: inherit;
 }
 
+/* Figure and Figure Captions */
+.figure {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.figure--image {
+    max-width: 100%;
+}
+
+.figure--caption {
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.7;
+}
+
+.figure--caption:before {
+    width: 25%;
+    margin-left: 75%;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+}
+
 /* Utility functions */
 .u-secondary {
     color: #B1ADAD;
@@ -49,5 +75,12 @@ a:hover, .post-title a:hover, #disqus_thread a {
 @media screen and (min-width: 768px) {
     .visible-xs-inline {
         display: none; !important
+    }
+    .figure--caption {
+        position: absolute;
+        top: 0;
+        width: 150px;
+        left: -172px;
+        text-align: right;
     }
 }
