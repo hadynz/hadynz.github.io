@@ -3,7 +3,6 @@
     text-decoration: underline;
 }
 
-
 .blog-content--inner .title {
     margin-bottom: 26px;
 }
@@ -45,6 +44,11 @@
 
 .blog-content--comments {
     margin-top: 40px;
+}
+
+/* Adjust vertical spacing for the first heading inside a section.page-posts */
+.page-posts > h2:first-child {
+    margin-top: 0;
 }
 
 .page-posts--article + .page-posts--article {
