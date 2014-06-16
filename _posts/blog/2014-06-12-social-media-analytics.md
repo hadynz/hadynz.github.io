@@ -32,7 +32,7 @@ straight forward to get me started to get my learning and thoughts out there.
 To skip this write-up right to the final solution [click here](#putting-it-all-together).
 {: .alert.alert-warning }
 
-# The importance of tracking social media
+## The importance of tracking social media
 Writing a blog post or any content on the web is more akin to a stab in the dark; you don't really know if it is
 relevant for people or if there is an audience for the material that you are discussing. Hence, the importance of 
 understanding the impact of your content on people... and what better way to track it nowadays by measuring 
@@ -45,7 +45,7 @@ that were added to your profile can provide a huge insight on what grabs your au
 The next step after having harnessed all this information is to obviously act on it by analysing it... but that's 
 a topic for another blog post.
 
-# Setting up Twitter widgets
+## Setting up Twitter widgets
 To add a Twitter widget to your website such as a twitter like or follow button, it is as simple as embedding the
 following on your page:
 
@@ -62,7 +62,7 @@ following on your page:
 In this post I will be mainly focusing on Twitter integration but the principles explained can work for any other
 social network that you are using.
 
-# Twitter API object
+## Twitter API object
 By embedding a twitter widget, your page will have access to Twitter's API via the `twttr` global object when the
 page loads. If you open the source of `widget.js` you will find something similar to the following line:
 
@@ -88,7 +88,7 @@ A heads up - Twitter has the following word of warning about using their API:
 > Note that Web Intent events are not supported in Internet Explorer before version 8, 
 and may not function fully in browsers that don't support the browser postMessage API (such as Chrome for iOS.)
 
-## Using JQuery
+### Using JQuery
 What most documentation online misses telling people is that the `twttr` object will not be available on initial
 page load, but only after the DOM has completely loaded.
 
@@ -104,18 +104,18 @@ If you are a fan of using pure JavaScript, you will need something like a `windo
 [Stackoverflow thread](http://stackoverflow.com/a/800010) illustrates its not that simple and you are better off using 
 a framework that does all the cross-browser plumbing for you for free.
 
-# Setting up Google Analytics
+## Setting up Google Analytics
 Adding (GA) is very straight forward and there are plenty of 
 [resources online](https://support.google.com/analytics/answer/1008080?hl=en) that talk about to do so. The two
 gotcha's that I had to get my head around when I was doing this recently were the following:
 
-## Classic vs Universal Analytics
+### 1. Classic vs Universal Analytics
 It seems that GA has two tracking codes that can be used - Classic Analytics (ga.js) and Universal Analytics (analytics.js)
 with the latter being the new defacto that you should be using. Universal Analytics is pretty much the new API that 
 GA is introducing and Classic will soon be deprecated. If you are using Classic GA and want to upgrade, you can 
 follow this [walkthrough](https://developers.google.com/analytics/devguides/collection/upgrade/).
 
-## Embedding Universal Analytics in your page
+### 2. Embedding Universal Analytics in your page
 If you have worked with GA in the last couple of years, you will remember that the recommended location to embed the
 GA resource scripts is at the bottom of the page just before you close the `</body>` tag. The new Universal Analytics
 tracking code is however asynchronous, and hence can be embedded in your page's `<header` tag without forcing your
@@ -136,7 +136,7 @@ object made globally available when you embed GA.
 ga('send', 'social', 'twitter', 'tweet', 'http://mypost.com');
 {% endhighlight %}
 
-# Putting it all together
+## Putting it all together
 To put all the above pieces together, you can track Twitter follow and tweet interactions on your page by using
 the following snippet:
 

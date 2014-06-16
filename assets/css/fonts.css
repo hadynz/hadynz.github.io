@@ -8,6 +8,7 @@ body, h1, h2, h3, h4, h5, h6, .sans-serif, .btn {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
     font-weight: normal;
 }
 
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     margin-top: 0;
     font-weight: 300;
-    font-size: 42px;
+    font-size: 44px;
 }
 
 .post-title-is-homepage {
