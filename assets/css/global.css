@@ -3,7 +3,7 @@ a:hover, .post-title a:hover, #disqus_thread a {
 }
 
 /* Quote */
-.quote {
+.blockquote-quote {
     font-size: 13px;
     line-height: 1.8;
     -webkit-font-smoothing: initial;
@@ -14,7 +14,7 @@ a:hover, .post-title a:hover, #disqus_thread a {
     border: none;
 }
 
-.quote--footer {
+.blockquote-quote--footer {
     font-size: inherit;
     line-height: inherit;
 }
