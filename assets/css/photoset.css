@@ -1,0 +1,58 @@
+.photoset {
+    position: relative;
+}
+
+.photoset .figure {
+    cursor: pointer;
+}
+
+.photoset--icon {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.photoset--icon-icon {
+    float: left;
+    font-size: 40px;
+    line-height: 32px;
+    transition: all 0.3s cubic-bezier(0.325, -0.075, 0, 1.65);
+}
+
+.photoset--icon-text {
+    display: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 28px;
+}
+
+.photoset:hover .photoset--icon {
+    padding: 0 4px;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.photoset:hover .photoset--icon-icon {
+    font-size: 24px;
+}
+
+.photoset:hover .photoset--icon-text {
+    display: inline-block;
+}
+
+/* Hide all figures inside a photoset except for first (which will be a clickable figure) */
+.photoset .photoset--figure:not(:first-child) {
+    display: none;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .photoset--icon {
+        bottom: 36px;
+        left: 5px;
+    }
+}

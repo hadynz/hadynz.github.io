@@ -4,6 +4,28 @@
 		{
 			"icon": {
 				"paths": [
+					"M256 384h128v-128h-128v128zM448 384h128v-128h-128v128zM640 256v128h128v-128h-128zM256 576h128v-128h-128v128zM448 576h128v-128h-128v128zM640 576h128v-128h-128v128zM256 768h128v-128h-128v128zM448 768h128v-128h-128v128zM640 768h128v-128h-128v128z"
+				],
+				"tags": [
+					"grid",
+					"icons"
+				],
+				"grid": 32
+			},
+			"properties": {
+				"id": 194,
+				"order": 13,
+				"prevSize": 32,
+				"code": 58886,
+				"name": "grid",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 194
+		},
+		{
+			"icon": {
+				"paths": [
 					"M512 928c-229.76 0-416-186.24-416-416s186.24-416 416-416 416 186.24 416 416-186.24 416-416 416zM512 192c-176.704 0-320 143.296-320 320s143.296 320 320 320c176.736 0 320-143.296 320-320s-143.264-320-320-320zM657.184 625.12l-32.448 32.448c-5.952 5.952-15.616 5.952-21.6 0l-91.84-91.84-91.84 91.84c-5.984 5.952-15.616 5.952-21.6 0l-32.448-32.448c-5.952-5.952-5.952-15.616 0-21.6l91.872-91.808-91.872-91.84c-5.952-5.984-5.952-15.648 0-21.632l32.448-32.416c5.984-5.984 15.616-5.984 21.6 0l91.84 91.84 91.84-91.84c5.984-5.984 15.648-5.984 21.6 0l32.448 32.416c5.952 5.984 5.952 15.648 0 21.632l-91.872 91.84 91.872 91.808c5.952 5.984 5.952 15.68 0 21.6z"
 				],
 				"grid": 32
@@ -16,7 +38,7 @@
 				"name": "close",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 2,
 			"iconIdx": 0
 		},
 		{
@@ -29,14 +51,14 @@
 			},
 			"properties": {
 				"id": 0,
-				"order": 8,
+				"order": 2,
 				"prevSize": 32,
 				"code": 58881,
 				"name": "google-plus",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 0
+			"setIdx": 2,
+			"iconIdx": 1
 		},
 		{
 			"icon": {
@@ -48,14 +70,14 @@
 			},
 			"properties": {
 				"id": 1,
-				"order": 9,
+				"order": 3,
 				"prevSize": 32,
 				"code": 58882,
 				"name": "facebook",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 1
+			"setIdx": 2,
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -67,14 +89,14 @@
 			},
 			"properties": {
 				"id": 2,
-				"order": 13,
+				"order": 5,
 				"prevSize": 32,
 				"code": 58883,
 				"name": "twitter",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 2
+			"setIdx": 2,
+			"iconIdx": 3
 		},
 		{
 			"icon": {
@@ -86,14 +108,14 @@
 			},
 			"properties": {
 				"id": 3,
-				"order": 14,
+				"order": 6,
 				"prevSize": 32,
 				"code": 58884,
 				"name": "feed",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 3
+			"setIdx": 2,
+			"iconIdx": 4
 		},
 		{
 			"icon": {
@@ -105,14 +127,14 @@
 			},
 			"properties": {
 				"id": 4,
-				"order": 17,
+				"order": 8,
 				"prevSize": 32,
 				"code": 58885,
 				"name": "feed2",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 4
+			"setIdx": 2,
+			"iconIdx": 5
 		},
 		{
 			"icon": {
@@ -124,14 +146,14 @@
 			},
 			"properties": {
 				"id": 8,
-				"order": 22,
+				"order": 9,
 				"prevSize": 32,
 				"code": 58888,
 				"name": "github",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 8
+			"setIdx": 2,
+			"iconIdx": 6
 		},
 		{
 			"icon": {
@@ -143,14 +165,14 @@
 			},
 			"properties": {
 				"id": 10,
-				"order": 24,
+				"order": 10,
 				"prevSize": 32,
 				"code": 58890,
 				"name": "tumblr",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 10
+			"setIdx": 2,
+			"iconIdx": 7
 		},
 		{
 			"icon": {
@@ -162,14 +184,14 @@
 			},
 			"properties": {
 				"id": 11,
-				"order": 25,
+				"order": 11,
 				"prevSize": 32,
 				"code": 58891,
 				"name": "stackoverflow",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 11
+			"setIdx": 2,
+			"iconIdx": 8
 		},
 		{
 			"icon": {
@@ -181,14 +203,14 @@
 			},
 			"properties": {
 				"id": 12,
-				"order": 10,
+				"order": 4,
 				"prevSize": 32,
 				"code": 58892,
 				"name": "pinterest",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 12
+			"setIdx": 2,
+			"iconIdx": 9
 		},
 		{
 			"icon": {
@@ -200,14 +222,14 @@
 			},
 			"properties": {
 				"id": 15,
-				"order": 15,
+				"order": 7,
 				"prevSize": 32,
 				"code": 58895,
 				"name": "linkedin",
 				"ligatures": ""
 			},
-			"setIdx": 7,
-			"iconIdx": 15
+			"setIdx": 2,
+			"iconIdx": 10
 		}
 	],
 	"height": 1024,
@@ -218,7 +240,7 @@
 	},
 	"preferences": {
 		"showGlyphs": true,
-		"showQuickUse": false,
+		"showQuickUse": true,
 		"fontPref": {
 			"prefix": "icon-",
 			"metadata": {
