@@ -27,6 +27,21 @@
     background: #000;
 }
 
+/* Braces in the blog title name */
+.navbar-brand--title {
+    float: left;
+    margin: 0 7px;
+}
+
+.navbar-brand--braces {
+    color: rgba(255, 51, 102, 0.6);
+    font-size: 28px;
+    font-weight: 100;
+    float: left;
+    position: relative;
+    top: -2px;
+}
+
 /* Small decides and down */
 @media screen and (max-width: 767px) {
 
