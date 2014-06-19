@@ -6,6 +6,7 @@
 .slick-active {
     opacity: 1;
     transition: opacity 0;
+    cursor: pointer;
 }
 
 .slick-list {
@@ -19,15 +20,16 @@
     height: 50px;
     bottom: 0;
     top: inherit;
+    display: none !important;
 }
 
 .slick-next {
-    right: 0;
+    right: -1px;
 }
 
 .slick-prev {
     left: inherit;
-    right: 51px;
+    right: 50px;
 }
 
 .slick-next:not(.slick-disabled):hover,
@@ -59,6 +61,7 @@
     left: 47%;
     width: auto;
     opacity: 0.6;
+    display: none !important;
 }
 
 .slick-dots li {
@@ -78,6 +81,16 @@
 
 .slick-dots .slick-active button {
     background: #F36;
+}
+
+.photoset-has-slideshow .slick-dots,
+.photoset-has-slideshow .slick-next,
+.photoset-has-slideshow .slick-prev {
+    display: block !important;
+}
+
+.photoset-has-slideshow .slick-active {
+    cursor: default;
 }
 
 /* Extra small devices (phones, less than 768px) */

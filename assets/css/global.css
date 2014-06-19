@@ -45,7 +45,7 @@ a:hover, .post-title a:hover, #disqus_thread a {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -73,6 +73,12 @@ a:hover, .post-title a:hover, #disqus_thread a {
     display: block;
     content: "";
     margin-bottom: 10px;
+}
+
+.photoset-has-slideshow .figure--caption,
+.photoset-has-slideshow .figure--caption:before {
+    color: white;
+    border-color: white;
 }
 
 /* Utility functions */

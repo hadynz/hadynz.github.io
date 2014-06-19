@@ -110,43 +110,48 @@ jQuery(function($){
  */
 jQuery(function($){
 
-    /*
-    var currentCarousel;
-    var $mask = $('<div />').addClass('x-mask');
-    var $body = $('body').append($mask);
+    var mask = {
 
-    var showMask = function() {
-        $body.addClass('x-mask-is-on');
+        $html: $('html'),
+
+        initMask: function() {
+            var me = this,
+                $mask = $('<div />').addClass('x-mask');
+
+            $mask.click($.proxy(this.hideMaskAndSlideshow, me));
+
+            // Constantly check if non-active figures have been clicked to hide mask
+            $('.figure').click(function(){
+                if (!$(this).hasClass('slick-active')) {
+                    me.hideMaskAndSlideshow();
+                }
+            });
+
+            this.$html.append($mask);
+        },
+
+        showMaskAndSlideshow: function($photoset) {
+            $photoset.addClass('photoset-has-slideshow');
+            this.$html.addClass('x-mask-is-on');
+        },
+
+        hideMaskAndSlideshow: function() {
+            $('.photoset.photoset-has-slideshow').removeClass('photoset-has-slideshow');
+            this.$html.removeClass('x-mask-is-on');
+        }
     };
 
-    var hideMask = function() {
-        $body.removeClass('x-mask-is-on');
-        currentCarousel.destroy();
-    };
-
-    var initCarousel = function(photoset) {
-        showMask();
-
-        photoset.owlCarousel({
-            singleItem: true,
-            navigation: true,
-            transitionStyle : "fade"
-        });
-
-        currentCarousel = photoset.data('owlCarousel');
-    };
-
-    $mask.click(hideMask);
-
-    $('.photoset:first').click(function(){
-        initCarousel($(this));
+    $('.photoset .figure').click(function(){
+        mask.showMaskAndSlideshow($(this).parents('.photoset'));
     });
-    */
 
+    // Turn on slideshow for all photosets
     $('.photoset').slick({
         infinite: false,
         slide: 'figure',
         dots: true
     });
+
+    mask.initMask();
 
 });

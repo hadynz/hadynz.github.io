@@ -1,5 +1,5 @@
 <div class="photoset">
     {% for photo in include.collection %}
-        {% include post/_image.html url=photo.src description=photo.caption class='photoset--figure' showPhotosetIcon=forloop.first %}
+        {% include post/_image.html url=photo.src description=photo.caption class='photoset--figure' %}
     {% endfor %}
 </div>

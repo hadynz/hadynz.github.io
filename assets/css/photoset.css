@@ -4,7 +4,6 @@
 }
 
 .photoset .figure {
-    cursor: pointer;
     margin-bottom: 0;
 }
 
@@ -48,6 +47,14 @@
 
 /* Hide all figures inside a photoset except for first (which will be a clickable figure) */
 .photoset .photoset--figure:not(:first-child):not(.slick-slide) {
+    display: none;
+}
+
+.photoset-has-slideshow {
+    z-index: 2;
+}
+
+.photoset-has-slideshow .photoset--icon {
     display: none;
 }
 
