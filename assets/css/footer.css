@@ -25,5 +25,7 @@ html {
     }
     .page-footer--inner {
         width: 215px;
+        position: relative;
+        z-index: 5;
     }
 }
