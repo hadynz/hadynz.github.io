@@ -1,0 +1,10 @@
+<div class="photoset">
+    {% for photo in include.collection %}
+        {% include post/_image.html url=photo.src description=photo.caption class='photoset--figure' id=forloop.index %}
+    {% endfor %}
+
+    <div class="photoset--icon">
+        <i class="photoset--icon-icon icon-grid"></i>
+        <span class="photoset--icon-text sans-serif">Photoset</span>
+    </div>
+</div>

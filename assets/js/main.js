@@ -104,3 +104,49 @@ jQuery(function($){
 
     });
 });
+
+/**
+ * Setup gallery collections using Magnific Popup widget
+ */
+jQuery(function($){
+
+    /*
+    var currentCarousel;
+    var $mask = $('<div />').addClass('x-mask');
+    var $body = $('body').append($mask);
+
+    var showMask = function() {
+        $body.addClass('x-mask-is-on');
+    };
+
+    var hideMask = function() {
+        $body.removeClass('x-mask-is-on');
+        currentCarousel.destroy();
+    };
+
+    var initCarousel = function(photoset) {
+        showMask();
+
+        photoset.owlCarousel({
+            singleItem: true,
+            navigation: true,
+            transitionStyle : "fade"
+        });
+
+        currentCarousel = photoset.data('owlCarousel');
+    };
+
+    $mask.click(hideMask);
+
+    $('.photoset:first').click(function(){
+        initCarousel($(this));
+    });
+    */
+
+    $('.photoset').slick({
+        infinite: false,
+        slide: 'figure',
+        dots: true
+    });
+
+});

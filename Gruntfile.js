@@ -21,7 +21,9 @@ module.exports = function(grunt) {
         files: {
           'dist/main.min.css': [
             //'assets/_less/main.less',
-            'bower_components/bootstrap/dist/css/bootstrap.css'
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'bower_components/slick-carousel/slick/slick.css',
+            'assets/fonts/style.css'
           ]
         }
       }
@@ -32,9 +34,8 @@ module.exports = function(grunt) {
           'dist/scripts.min.js': [
             'bower_components/jquery/dist/*.min.js',
             'bower_components/jquery-throttle-debounce/*.min.js',
-            //'bower_components/fitvids/*.js',
-            //'bower_components/magnific-popup/dist/*.min.js',
             'bower_components/bootstrap/dist/js/*.min.js',
+            'bower_components/slick-carousel/slick/*.min.js',
             'assets/js/_*.js'
           ]
         }

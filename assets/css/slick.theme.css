@@ -1,0 +1,89 @@
+.slick-slide {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.slick-active {
+    opacity: 1;
+    transition: opacity 0;
+}
+
+.slick-list {
+    overflow: visible;
+}
+
+/* Next/Previous Buttons */
+.slick-next, .slick-prev {
+    background: rgba(0, 0, 0, 0.9);
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    top: inherit;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: inherit;
+    right: 51px;
+}
+
+.slick-next:not(.slick-disabled):hover,
+.slick-prev:not(.slick-disabled):hover {
+    background: #F36;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-family: 'icomoon';
+    font-size: 38px;
+}
+
+.slick-prev:before {
+    content: "\e607";
+}
+
+.slick-next:before {
+    content: "\e609";
+}
+
+.slick-disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+
+/* Dots */
+.slick-dots {
+    bottom: 0;
+    left: 47%;
+    width: auto;
+    opacity: 0.6;
+}
+
+.slick-dots li {
+    width: auto;
+    height: auto;
+    margin: 0 2px;
+}
+
+.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    background: black;
+    border-radius: 100%;
+    text-indent: -99999px;
+}
+
+.slick-dots .slick-active button {
+    background: #F36;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    /* Mobile breakpoint has caption below photo, and hence buttons need to be moved up */
+    .slick-next, .slick-prev, .slick-dots {
+        bottom: 31px;
+    }
+}

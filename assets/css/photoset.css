@@ -1,9 +1,11 @@
 .photoset {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .photoset .figure {
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 .photoset--icon {
@@ -45,7 +47,7 @@
 }
 
 /* Hide all figures inside a photoset except for first (which will be a clickable figure) */
-.photoset .photoset--figure:not(:first-child) {
+.photoset .photoset--figure:not(:first-child):not(.slick-slide) {
     display: none;
 }
 

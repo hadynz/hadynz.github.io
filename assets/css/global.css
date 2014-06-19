@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 a:hover, .post-title a:hover, #disqus_thread a {
     color: #F36;
 }
@@ -28,6 +32,21 @@ a:hover, .post-title a:hover, #disqus_thread a {
     font-size: inherit;
     line-height: inherit;
     -webkit-font-smoothing: antialiased;
+}
+
+/* Global Mask */
+.x-mask-is-on {
+    overflow: hidden;
+}
+
+.x-mask-is-on .x-mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
 }
 
 /* Figure and Figure Captions */

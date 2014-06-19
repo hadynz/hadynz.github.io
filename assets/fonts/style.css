@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/assets/fonts/icomoon.eot?-23cjgc');
+	src:url('/assets/fonts/icomoon.eot?#iefix-23cjgc') format('embedded-opentype'),
+		url('/assets/fonts/icomoon.woff?-23cjgc') format('woff'),
+		url('/assets/fonts/icomoon.ttf?-23cjgc') format('truetype'),
+		url('/assets/fonts/icomoon.svg?-23cjgc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE607:before {
+	content: "\e607";
+}
+.icon-uniE609:before {
+	content: "\e609";
+}
+.icon-grid:before {
+	content: "\e606";
+}
+.icon-close:before {
+	content: "\e600";
+}
+.icon-google-plus:before {
+	content: "\e601";
+}
+.icon-facebook:before {
+	content: "\e602";
+}
+.icon-twitter:before {
+	content: "\e603";
+}
+.icon-feed:before {
+	content: "\e604";
+}
+.icon-feed2:before {
+	content: "\e605";
+}
+.icon-github:before {
+	content: "\e608";
+}
+.icon-tumblr:before {
+	content: "\e60a";
+}
+.icon-stackoverflow:before {
+	content: "\e60b";
+}
+.icon-pinterest:before {
+	content: "\e60c";
+}
+.icon-linkedin:before {
+	content: "\e60f";
+}
