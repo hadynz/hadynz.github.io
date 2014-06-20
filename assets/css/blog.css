@@ -56,11 +56,16 @@
     margin-top: 0;
 }
 
+.page-posts > h2 {
+    margin-bottom: 0;
+}
+
 .page-posts--article + .page-posts--article {
     margin-top: 20px;
 }
 
 .page-posts--article .heading {
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
