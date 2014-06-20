@@ -6,7 +6,6 @@
 .slick-active {
     opacity: 1;
     transition: opacity 0;
-    cursor: pointer;
 }
 
 .slick-list {
@@ -15,21 +14,21 @@
 
 /* Next/Previous Buttons */
 .slick-next, .slick-prev {
-    background: rgba(0, 0, 0, 0.9);
-    width: 50px;
-    height: 50px;
-    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 40px;
+    height: 40px;
+    bottom: 3px;
     top: inherit;
-    display: none !important;
+    z-index: 6;
 }
 
 .slick-next {
-    right: -1px;
+    right: 2px;
 }
 
 .slick-prev {
     left: inherit;
-    right: 50px;
+    right: 44px;
 }
 
 .slick-next:not(.slick-disabled):hover,
@@ -39,7 +38,7 @@
 
 .slick-next:before, .slick-prev:before {
     font-family: 'icomoon';
-    font-size: 38px;
+    font-size: 32px;
 }
 
 .slick-prev:before {
@@ -61,7 +60,6 @@
     left: 47%;
     width: auto;
     opacity: 0.6;
-    display: none !important;
 }
 
 .slick-dots li {
@@ -81,16 +79,6 @@
 
 .slick-dots .slick-active button {
     background: #F36;
-}
-
-.photoset-has-slideshow .slick-dots,
-.photoset-has-slideshow .slick-next,
-.photoset-has-slideshow .slick-prev {
-    display: block !important;
-}
-
-.photoset-has-slideshow .slick-active {
-    cursor: default;
 }
 
 /* Extra small devices (phones, less than 768px) */

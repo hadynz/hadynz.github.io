@@ -75,12 +75,6 @@ a:hover, .post-title a:hover, #disqus_thread a {
     margin-bottom: 10px;
 }
 
-.photoset-has-slideshow .figure--caption,
-.photoset-has-slideshow .figure--caption:before {
-    color: white;
-    border-color: white;
-}
-
 /* Utility functions */
 .u-secondary {
     color: #B1ADAD;
