@@ -60,6 +60,7 @@
     left: 47%;
     width: auto;
     opacity: 0.6;
+    z-index: 6;
 }
 
 .slick-dots li {
