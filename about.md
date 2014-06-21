@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: Sup!
+title: Hi there!
 biography: false
 comments: false
 ---

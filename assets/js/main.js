@@ -1,3 +1,5 @@
+/*global ga, twttr  */
+
 /**
  * Conditional fixing the position of my personal biography
  * section when a user scrolls down the page
@@ -8,7 +10,7 @@ jQuery(function($) {
 
     // A Safari-only check to implement an unfortunate hack
     var isSafari = function () {
-        return /constructor/i.test(window.HTMLElement);
+        return (/constructor/i).test(window.HTMLElement);
     };
 
     if ($biography.length > 0) {
