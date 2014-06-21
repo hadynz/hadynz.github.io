@@ -112,7 +112,7 @@ module.exports = function (grunt) {
         },
         shell: {
             jekyll: {
-                command: 'jekyll build',
+                command: 'jekyll build --drafts',
                 stdout: true
             }
         },
@@ -155,7 +155,7 @@ module.exports = function (grunt) {
                 files: [
                     '_config.yml',
                     '*.md',
-                    '{_layouts, _posts, _includes, _data, _posts}/**',
+                    '{_layouts,_posts,_includes,_data,_posts,_drafts}/**',
                     'assets/{fonts,images}/**'
                 ],
                 tasks: ['shell:jekyll']

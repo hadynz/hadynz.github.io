@@ -15,3 +15,7 @@ Post that talks about the reasons why I went down with Jekyll
 * Love the idea about opening the blog for others to contribute via a pull request! Yet to have anyone actually
 contribute. To entic peple I hv purpsly left severl misspellingz in ts sntence to provoke the perfctionist 
 in readers.
+* Editor that I use for writing markdown - WebStorm. Fantastic!
+
+
+http://www.divshot.com/blog/web-development/advanced-jekyll-features/#custom-post-types
