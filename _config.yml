@@ -5,7 +5,7 @@ url: http://hady.geek.nz
 # Owner/author information
 owner:
   name: Hady Osman
-  avatar: bio-photo.jpg
+  avatar: /assets/images/bio_photo.jpg
   email: hadyos@gmail.com
 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.

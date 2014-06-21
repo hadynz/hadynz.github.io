@@ -1,6 +1,7 @@
 .photoset {
     position: relative;
     margin: 30px 0;
+    background: url('/assets/images/bg_ios_fabric.png') no-repeat center center;
 }
 
 .photoset .figure {
