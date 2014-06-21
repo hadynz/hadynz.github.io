@@ -1,10 +1,15 @@
 .photoset {
     position: relative;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .photoset .figure {
     margin-bottom: 0;
+}
+
+.photoset .figure--image-wrapper {
+    height: 400px;
+    overflow: hidden;
 }
 
 /* Hide all figures inside a photoset except for first (which will be a clickable figure) */

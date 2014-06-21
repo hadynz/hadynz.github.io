@@ -17,18 +17,18 @@
     background: rgba(0, 0, 0, 0.8);
     width: 40px;
     height: 40px;
-    bottom: 3px;
+    bottom: 0;
     top: inherit;
     z-index: 6;
 }
 
 .slick-next {
-    right: 2px;
+    right: 0;
 }
 
 .slick-prev {
     left: inherit;
-    right: 44px;
+    right: 40px;
 }
 
 .slick-next:not(.slick-disabled):hover,
