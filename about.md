@@ -83,4 +83,6 @@ about things other than what I am actively working on if someone asks me to do s
 
 * Use "photoset" idea on photo collections from Stammy
 
-{% include post/_image_photoset.html collection=site.data.photoset.futsal %}
+{% include post/_image_photoset.html collection=site.data.photoset.outdoors %}
+
+{% include post/_image_photoset.html collection=site.data.photoset.aed %}

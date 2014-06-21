@@ -3,11 +3,25 @@
 # {% include post/_image_photoset.html collection=site.data.photoset.#name %}
 #
 futsal:
-  - src: https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc1/t1.0-9/285002_10150328816521223_2353724_n.jpg
+  - src: /assets/images/photos/futsal/hady_colombia1.jpg
     caption: New Zealand vs Colombia at the 2011 AMF Futsal World Cup
 
-  - src: /assets/images/about/futsal/hady_colombia2.jpg
+  - src: /assets/images/photos/futsal/hady_colombia2.jpg
     caption: Caption number two
 
   - src: https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/1926234_623692827698974_361425977_o.jpg
     caption: Another caption will go here
+
+aed:
+  - src: /assets/images/photos/aed/aed_breakfast_sam.jpg
+    caption: Photo with Sam _ from TV1's Breakfast Show before the start of Eid in 2013
+
+  - src: /assets/images/photos/aed/aed_johnkey_parliament.jpg
+    caption: Celebrating Eid on invitation from the Ministry of _ with New Zealand Prime Minister, John Key
+
+outdoors:
+  - src: /assets/images/photos/outdoors/hady_taupo1.jpg
+    caption: Spa Road in Taupo
+
+  - src: /assets/images/photos/outdoors/hady_taupo2.jpg
+    caption: Lake Taupo
