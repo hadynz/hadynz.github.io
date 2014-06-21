@@ -127,7 +127,8 @@ module.exports = function (grunt) {
         },
         watch: {
             options: {
-                livereload: true
+                livereload: true,
+                spawn: false
             },
             // Listen to `.less` changes, compile and then copy to _site/dist
             less: {
