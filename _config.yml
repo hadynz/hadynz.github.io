@@ -29,7 +29,7 @@ widget:
 timezone: Pacific/Auckland
 future:      true
 permalink: '/:categories/:title/'
-exclude: ['Rakefile.rb', 'Gruntfile.js', 'package.json', 'node_modules', 'README.md', 'CNAME', 'bower_components']
+exclude: ['Rakefile.rb', 'Gruntfile.js', 'package.json', 'node_modules', 'README.md', 'CNAME', 'bower_components', 'bower.json']
 safe: true
 markdown: kramdown
 kramdown:
