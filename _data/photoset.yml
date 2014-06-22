@@ -13,15 +13,15 @@ futsal:
     caption: Another caption will go here
 
 aed:
-  - src: /assets/images/photos/aed/aed_breakfast_sam.jpg
-    caption: Photo with Sam _ from TV1's Breakfast Show before the start of Eid in 2013
-
   - src: /assets/images/photos/aed/aed_johnkey_parliament.jpg
     caption: Celebrating Eid on invitation from the Ministry of _ with New Zealand Prime Minister, John Key
 
-outdoors:
-  - src: /assets/images/photos/outdoors/hady_taupo1.jpg
-    caption: Spa Road in Taupo
+  - src: /assets/images/photos/aed/aed_breakfast_sam.jpg
+    caption: Photo with Sam _ from TV1's Breakfast Show before the start of Eid in 2013
 
+outdoors:
   - src: /assets/images/photos/outdoors/hady_taupo2.jpg
     caption: Lake Taupo
+
+  - src: /assets/images/photos/outdoors/hady_taupo1.jpg
+    caption: Spa Road in Taupo

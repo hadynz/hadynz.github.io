@@ -5,79 +5,36 @@ title: Hi there!
 biography: false
 comments: false
 ---
-I'm Hady and this is my blog. I am a front end developer at [Xero](http://www.xero.com) working on the 
-[Practice Manager](https://www.xero.com/nz/practicemanager/) team.
+I'm Hady and I live in (the most _beautiful_ city in the world) [Auckland](http://www.newzealand.com/int/auckland/), 
+New Zealand.
 
-### Why do I blog?
-This is the key for me. I joke that I use my blog instead of a brain, but that's not too far from the truth! I started 
-blogging because I changed jobs relatively often and kept losing my "useful scripts" directory with each job move. So 
-instead of putting text files in a directory, I started putting code samples into a blog, with the intention that I'd 
-be able to find them later. I still blog this way, things I want to remember, stuff that I want to tell people about 
-events that I'm going to, and so on. I have no idea why so many people read the things I write but I hope they find 
-value here.
+I come from a strong software services background having worked at [IBM](http://ibm.com/nz) and [Datacom](http://datacom.co.nz) 
+for around 9 years specialising as a full-stack, jack-of-all trades consultant. However, given my ambition to 
+continue evolving the passionate developer in me, I joined [Xero](http://www.xero.com) in 2013 to experience what 
+it's like to work for a product based company that cares about finesse, eye for detail and beautiful code that is a 
+pleasure to work on everyday.
 
-The flip-side of this is that although I am a statistics nut and watch my google analytics stats quite closely, I 
-don't really write for that purpose. I blog to publicly "remember" things, and the site doesn't make money at all 
-so it doesn't make any difference to me whether I see 100 hits or 1000 hits on any given day. I am interested about 
-what brings in the traffic, because it tells me when topics are of interest in the industry, but I usually only write 
-posts about things other than what I am actively working on if someone asks me to do so (requests always welcome).
+When I'm not coding after work on a side project (which rarely is the case), I will typically be either training-for or
+playing [futsal](http://youtu.be/unFlcSwdDFc) - a game that I have been playing for over 15 years and made me travel 
+around the world to places like Australia, Malaysia and even as far as Colombia!
 
+## Why do I blog?
+My primary motivation behind this blog is for it to become a repository of all my thoughts and learnings that I
+have gathered over the years when jumping between tech-stacks, projects and companies. You will see me posting 
+many code samples that either took me lots of time (and pulled hair) to work out, or little precious gems that I 
+would like to have available for me at anytime.
 
-Introduction talking about who I am...
+Now _I'm_ not the only primary audience that I target! The other target segment for this blog is _you_. I feel a lot
+of self fulfilment when I see that knowledge that I share with others help fix problems they run into, or inspire
+them down the right track that they have been looking for. I am unsure how many people will read the things I share,
+but I hope that there will be value here.
 
-Some things I look for in the things I work on:
-* great design and experience
-* ...
+## About this blog
+// Describe how this blog was built and why I used the technology that I did
 
-## Keep in touch
-* List
-* Different
-* Methods to stay in touch...
-
-## Recent Projects
-[Link 1]: Description about what this project is about
-
-[Link 2]: Description about what this project is about
-
-## The toolbelt
-Things I work with most nowadays:
-* [ExtJS](http://www.sencha.com)
-* Backbone.js
-* Sass
-* Less
-* XBMC
-
-Things I've used before and might come back to now and then:
-* KnockoutJS
- 
-## Random stuff I enjoy
-**Travel**: Something about this...
-
-**Futsal**: Something about this...
-
-**XBMC**: Something about this...
-
-**Friends**: Something about this...
-
-
-## Write for Yourself
-This is the key for me. I joke that I use my blog instead of a brain, but that's not too far from the truth! I started 
-blogging because I changed jobs relatively often and kept losing my "useful scripts" directory with each job move. 
-So instead of putting text files in a directory, I started putting code samples into a blog, with the intention that 
-I'd be able to find them later. I still blog this way, things I want to remember, stuff that I want to tell people 
-about events that I'm going to, and so on. I have no idea why so many people read the things I write but I hope they 
-find value here.
-
-The flip-side of this is that although I am a statistics nut and watch my google analytics stats quite closely, I 
-don't really write for that purpose. I blog to publicly "remember" things, and the site doesn't make money at all so 
-it doesn't make any difference to me whether I see 100 hits or 1000 hits on any given day. I am interested about what 
-brings in the traffic, because it tells me when topics are of interest in the industry, but I usually only write posts 
-about things other than what I am actively working on if someone asks me to do so (requests always welcome).
+--- 
 
 ## Photos
-1. Hady at Colombia
-2. John Key
-3. Swimming!
 
 {% include post/_image_photoset.html collection=site.data.photoset.futsal %}
 
@@ -86,3 +43,15 @@ about things other than what I am actively working on if someone asks me to do s
 {% include post/_image_photoset.html collection=site.data.photoset.outdoors %}
 
 {% include post/_image_photoset.html collection=site.data.photoset.aed %}
+
+---
+
+## Keep in touch
+I am fairly active on the following social mediums if you would like to keep in touch.
+
+* [Twitter](https://twitter.com/hadynz)
+* [GitHub](http://github.com/hadynz)
+* [LinkedIn](http://nz.linkedin.com/in/hadyosman/)
+
+And of course, you can always [contact me](about/) the old fashion way through email if you have any questions - I'd 
+definitely love to hear from _you_.
