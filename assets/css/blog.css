@@ -58,8 +58,11 @@
     margin-right: 8px;
 }
 
-.blog-content--inner h2:after,
-.blog-content--inner h3:after {
+.blog-content--inner h3:before {
+    content: '#';
+}
+
+.blog-content--inner h2:after {
     content: '*/';
     margin-left: 8px;
 }
@@ -107,14 +110,12 @@
     .blog-content-wrapper {
         margin-bottom: 25px;
     }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 992px) {
-    .blog-content--inner h2:before,
-    .blog-content--inner h3:before {
-        content: '/*';
+    .blog-content--inner h2:before {
         position: absolute;
         left: -18px;
+    }
+    .blog-content--inner h3:before {
+        position: absolute;
+        left: -8px;
     }
 }
