@@ -118,3 +118,10 @@ a:hover, .post-title a:hover, #disqus_thread a {
         text-align: right;
     }
 }
+
+@media screen and (max-width: 991px) {
+    /* Override bootstrap container width for iPad portrait to be fluid width */
+    .container {
+        width: auto;
+    }
+}
