@@ -8,6 +8,7 @@ html {
     padding: 15px 0;
     font-size: 11px;
     color: #999;
+    z-index: -1;
 }
 
 .page-footer p:last-child {
