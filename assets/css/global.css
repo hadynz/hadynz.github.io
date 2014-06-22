@@ -101,6 +101,9 @@ a:hover, .post-title a:hover, #disqus_thread a {
     .visible-xs-inline {
         display: inline-block; !important
     }
+    .figure--caption {
+        background: #FFF;
+    }
 }
 
 @media screen and (min-width: 768px) {

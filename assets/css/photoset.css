@@ -9,8 +9,9 @@
 }
 
 .photoset .figure--image-wrapper {
-    height: 400px;
     overflow: hidden;
+    padding-bottom: 66.25%;
+    height: 0;
 }
 
 /* Hide all figures inside a photoset except for first (which will be a clickable figure) */
