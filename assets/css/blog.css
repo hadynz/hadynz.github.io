@@ -42,6 +42,28 @@
     color: #F36;
 }
 
+/* Funky comment like :before/:after pseudo selectors */
+.blog-content--inner h2:before,
+.blog-content--inner h3:before,
+.blog-content--inner h2:after,
+.blog-content--inner h3:after {
+    opacity: 0.2;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+}
+
+.blog-content--inner h2:before,
+.blog-content--inner h3:before {
+    content: '/*';
+    margin-right: 8px;
+}
+
+.blog-content--inner h2:after,
+.blog-content--inner h3:after {
+    content: '*/';
+    margin-left: 8px;
+}
+
 .blog-content--comments {
     margin-top: 40px;
 }
@@ -84,5 +106,15 @@
 @media (min-width: 768px) {
     .blog-content-wrapper {
         margin-bottom: 25px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 992px) {
+    .blog-content--inner h2:before,
+    .blog-content--inner h3:before {
+        content: '/*';
+        position: absolute;
+        left: -18px;
     }
 }
