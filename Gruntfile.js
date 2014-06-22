@@ -120,6 +120,7 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     port: 8080,
+                    hostname: '*', // to allow server to be accessed from outside.
                     base: '_site',
                     livereload: true
                 }
