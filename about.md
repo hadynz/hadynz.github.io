@@ -18,6 +18,8 @@ When I'm not coding after work on a side project (which rarely is the case), I w
 playing [futsal](http://youtu.be/unFlcSwdDFc) - a game that I have been playing for over 15 years and made me travel 
 around the world to places like Australia, Malaysia and even as far as Colombia!
 
+{% include post/_image.html url="/assets/images/photos/misc/hady_maldives.jpg" description="Immersed in the photogenic crystal clear waters of the Kurumba Maldives" %}
+
 ## Why do I blog?
 My primary motivation behind this blog is for it to become a repository of all my thoughts and learnings that I
 have gathered over the years when jumping between tech-stacks, projects and companies. You will see me posting 
