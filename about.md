@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: Hi there!
+title: Hellloooo there!
 biography: false
 comments: false
 ---
@@ -18,7 +18,7 @@ When I'm not coding after work on a side project (which rarely is the case), I w
 playing [futsal](http://youtu.be/unFlcSwdDFc) - a game that I have been playing for over 15 years and made me travel 
 around the world to places like Australia, Malaysia and even as far as Colombia!
 
-{% include post/_image.html url="/assets/images/photos/misc/hady_kurumba.jpg" description="Immersed in the crystal clear waters of the Maldives at the Kurumba resort" %}
+{% include post/_image.html url="/assets/images/photos/misc/hady_kurumba.jpg" description="Immersed in the crystal clear waters of the Maldives at <a href='http://kurumba.com'>Kurumba Maldives</a>" %}
 
 ## Why do I blog?
 My primary motivation behind this blog is for it to become a repository of all my thoughts and learnings that I
@@ -27,12 +27,30 @@ many code samples that either took me lots of time (and pulled hair) to work out
 would like to have available for me at anytime.
 
 Now _I'm_ not the only primary audience that I target! The other target segment for this blog is _you_. I feel a lot
-of self fulfilment when I see that knowledge that I share with others help fix problems they run into, or inspire
-them down the right track that they have been looking for. I am unsure how many people will read the things I share,
-but I hope that there will be value here.
+of self fulfilment when I see that knowledge that I share with others has helped fix problems they've run into, or 
+at least inspired them down the right track that they have been looking for. Now I am unsure if my blog would
+actually achieve that, but I do really hope that readers will find some value here.
 
 ## About this blog
-// Describe how this blog was built and why I used the technology that I did
+This blog is probably around my 5th attempt of creating an online presence for myself in many, many years. I started off
+with a blog running on Wordpress, moved to Tumblr, and not long after it had moved again on to Drupal. The reason
+I was not able to stay in one place is because each platform did not quite do what I wanted. Being the perfectionist
+that I sometimes can be, I kept getting distracted by tinkering with platform configuration and plugins, instead of
+ _actually_ writing.
+ 
+Getting sick of making excuses for myself, I finally decided to absolutely commit to getting a blog up and running, 
+and the solution came in the form of using [Jekyll](http://jekyllrb.com), a static website generator, and host it on
+[GitHub Pages](https://pages.github.com). Why was this platform any different? Well writing posts in 
+[Markdown](http://en.wikipedia.org/wiki/Markdown) and having complete control over my site templates almost felt 
+like coding (_fun!_) and not tedious content authoring. GitHub pages also provided me with the ability of allowing 
+readers to contribute to anything I write - an idea inspired by [Phil Haack](http://haacked.com/)'s blog which excited 
+me to try out as well.
+
+I code, write and publish my blog posts using my favourite and trusty [WebStorm IDE](http://www.jetbrains.com/webstorm).
+
+I also need to extend my gratitude to [@SylvainLafitte](https://twitter.com/SylvainLafitte) for helping me with the 
+site's typography, and my dearest wife [@DandoonG](https://twitter.com/DandoonG) for her constant feedback during the 
+blog's development.
 
 --- 
 
