@@ -4,24 +4,32 @@
 #
 futsal:
   - src: /assets/images/photos/futsal/hady_colombia1.jpg
-    caption: New Zealand vs Colombia at the 2011 AMF Futsal World Cup
+    caption: |
+      New Zealand vs Colombia. The 'ne plus ultra' (highlight) of my career - representing
+      New Zealand at the 2011 AMF Futsal World Cup.<br/><br/>The final game score shall remain unmentioned
 
   - src: /assets/images/photos/futsal/hady_colombia2.jpg
-    caption: Caption number two
+    caption: New Zealand vs Colombia. The calm before the storm
 
   - src: https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/1926234_623692827698974_361425977_o.jpg
-    caption: Another caption will go here
+    caption: Posing with my local futsal team, Auckland Saeta
 
-aed:
+community:
   - src: /assets/images/photos/aed/aed_johnkey_parliament.jpg
-    caption: Celebrating Eid on invitation from the Ministry of _ with New Zealand Prime Minister, John Key
+    caption: Photo with John Key during the Eid reception in the Grand Hall, Parliament Buildings on invitation by the Minister of Ethnic Affairs
+
+  - src: /assets/images/photos/misc/hady_marhaba.jpg
+    caption: Helping out at mom's <a href="http://marhaba.co.nz">Marhaba Play Centre</a> and being inspired by the energy of tomorrow's leaders
 
   - src: /assets/images/photos/aed/aed_breakfast_sam.jpg
-    caption: Photo with Sam _ from TV1's Breakfast Show before the start of Eid in 2013
+    caption: Posing with Sam Wallace from the Breakfast Show before the start of Auckland Eid Day 2013 at the ASB Showgrounds
 
 outdoors:
   - src: /assets/images/photos/outdoors/hady_taupo2.jpg
-    caption: Lake Taupo
+    caption: About to embark on a private charter in Lake Taupo for some fishing and sea-biscuit adrenalin rush
+
+  - src: /assets/images/photos/outdoors/hady_matamata.jpg
+    caption: Siezing the moment when Frodo was out of the shire at Hobbiton, Matamata
 
   - src: /assets/images/photos/outdoors/hady_taupo1.jpg
-    caption: Spa Road in Taupo
+    caption: Basking in the hot and natural hot pool of the Otumuheke Stream (hot river) that is feeding the mighty Waikato River at Spa Park, Taupo

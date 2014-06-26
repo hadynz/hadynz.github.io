@@ -54,7 +54,7 @@ blog's development.
 
 --- 
 
-## My Passions
+## My Passion
 Passion and past experiences are what forms many of our personalities and way of life. So to better introduce
 myself I have collated the following photosets of some of the things that inspire me in life.
 
@@ -77,7 +77,7 @@ I am a strong believer that everything I am today has been a gift for me that I 
 teaching others.
 {: .small}
 
-{% include post/_image_photoset.html collection=site.data.photoset.aed %}
+{% include post/_image_photoset.html collection=site.data.photoset.community %}
 
 ---
 
