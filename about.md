@@ -54,13 +54,28 @@ blog's development.
 
 --- 
 
-## Photos
+## My Passions
+Passion and past experiences are what forms many of our personalities and way of life. So to better introduce
+myself I have collated the following photosets of some of the things that inspire me in life.
+
+#### Futsal
+I have played soccer for almost as long as I can remember, and been playing futsal since high school. Its a game
+of speed and agility. It's also a game that I met many of my current network of contacts and besties.
+{: .small}
 
 {% include post/_image_photoset.html collection=site.data.photoset.futsal %}
 
-* Use "photoset" idea on photo collections from Stammy
+#### The New Zealand outdoors
+Ever since I attended adult swimming classes almost 5 years ago and learnt how to tread (and kinda swim), I have
+discovered the New Zealand outdoors in a completely new and different light.
+{: .small}
 
 {% include post/_image_photoset.html collection=site.data.photoset.outdoors %}
+
+#### Serving the community
+I am a strong believer that everything I am today has been a gift for me that I need to utilise in helping and
+teaching others.
+{: .small}
 
 {% include post/_image_photoset.html collection=site.data.photoset.aed %}
 
