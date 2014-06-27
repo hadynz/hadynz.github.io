@@ -11,10 +11,9 @@ meta: true
 One of the Git strategies that have worked well in my current project that I am working on is to have a separate
 fetch and push URL for a given repository.
 
-What this allows you is to always fetch from the _main_ repository code base that everyone on the team contributes to.
- 
-However, when it comes to contributing back to the _main_ repository, all pushes are done against a **fork** of the
-_main_ repository. Once the developer is happy with his series of commits and is ready to merge back to the _main_
+What this allows you is to have a strategy where all developers pull the latest code from the _main_ repository, 
+however, before they contribute back to it, they need to do so by first pushing against a **fork** of the _main_ 
+repository. Once the developer is happy with his series of commits and is ready to merge back to the _main_
 repository, they create a **pull request** with the modified unit of work.
 
 This process has been really helpful in ensuring that all code gets reviewed before it is merged in to the _main_
