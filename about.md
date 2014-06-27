@@ -56,7 +56,7 @@ blog's development.
 
 ## My Passion
 Passion and past experiences are what forms many of our personalities and way of life. So to better introduce
-myself I have collated the following photosets of some of the things that inspire me in life.
+myself I have collated the following photosets of some of the things that inspire me everyday.
 
 #### Futsal
 I have played soccer for almost as long as I can remember, and been playing futsal since high school. Its a game
@@ -64,6 +64,14 @@ of speed and agility. It's also a game that I met many of my current network of 
 {: .small}
 
 {% include post/_image_photoset.html collection=site.data.photoset.futsal %}
+
+#### Hackathons & Competitions
+Throughout the years I have found that nothing grows me faster like putting myself outside my comfort zone and working 
+under dire pressure with strangers in a short and fixed amount of time. I have discovered excitement of tech hackathons 
+over the last couple of years and have learnt a lot from some great people along the way.
+{: .small}
+
+{% include post/_image_photoset.html collection=site.data.photoset.geek %}
 
 #### The New Zealand outdoors
 Ever since I attended adult swimming classes almost 5 years ago and learnt how to tread (and kinda swim), I have
