@@ -6,30 +6,66 @@ futsal:
   - src: /assets/images/photos/futsal/hady_colombia1.jpg
     caption: |
       New Zealand vs Colombia. The 'ne plus ultra' (highlight) of my career - representing
-      New Zealand at the 2011 AMF Futsal World Cup.<br/><br/>The final game score shall remain unmentioned
+      New Zealand at the 2011 AMF Futsal World Cup.<br/><br/>The final game score shall remain unmentioned.
 
   - src: /assets/images/photos/futsal/hady_colombia2.jpg
-    caption: New Zealand vs Colombia. The calm before the storm
+    caption: New Zealand vs Colombia. The calm before the storm.
 
   - src: https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/1926234_623692827698974_361425977_o.jpg
-    caption: Posing with my local futsal team, Auckland Saeta
+    caption: Posing with my local futsal team, Auckland Saeta.
 
 community:
   - src: /assets/images/photos/aed/aed_johnkey_parliament.jpg
-    caption: Photo with John Key during the Eid reception in the Grand Hall, Parliament Buildings on invitation by the Minister of Ethnic Affairs
+    caption: |
+      Photo with John Key during the Eid reception in the Grand Hall, Parliament Buildings on invitation by the
+      Minister of Ethnic Affairs.
 
   - src: /assets/images/photos/misc/hady_marhaba.jpg
-    caption: Helping out at mom's <a href="http://marhaba.co.nz">Marhaba Play Centre</a> and being inspired by the energy of tomorrow's leaders
+    caption: |
+      Helping out at mom's <a href="http://marhaba.co.nz">Marhaba Play Centre</a> and being inspired by the
+      energy of tomorrow's leaders.
 
   - src: /assets/images/photos/aed/aed_breakfast_sam.jpg
-    caption: Posing with Sam Wallace from the Breakfast Show before the start of Auckland Eid Day 2013 at the ASB Showgrounds
+    caption: Posing with Sam Wallace from the Breakfast Show before the start of Auckland Eid Day 2013 at the ASB Showgrounds.
 
 outdoors:
   - src: /assets/images/photos/outdoors/hady_taupo2.jpg
-    caption: About to embark on a private charter in Lake Taupo for some fishing and sea-biscuit adrenalin rush
+    caption: About to embark on a private charter in Lake Taupo for some fishing and sea-biscuit adrenalin rush.
 
   - src: /assets/images/photos/outdoors/hady_matamata.jpg
-    caption: Siezing the moment when Frodo was out of the shire at Hobbiton, Matamata
+    caption: Siezing the moment when Frodo was out of the shire at Hobbiton, Matamata.
 
   - src: /assets/images/photos/outdoors/hady_taupo1.jpg
-    caption: Basking in the hot and natural hot pool of the Otumuheke Stream (hot river) that is feeding the mighty Waikato River at Spa Park, Taupo
+    caption: |
+      Basking in the hot and natural hot pool of the Otumuheke Stream (hot river) that is feeding the
+      mighty Waikato River at Spa Park, Taupo.
+
+geek:
+  - src: /assets/images/photos/hackathon/hady_asw_2014.jpg
+    caption: |
+      Group photo of team <a href="http://www.idealog.co.nz/blog/2014/05/startup-weekend-winner-puts-tenants-test">Trusty Tenants</a>,
+      winners of <a href="http://auckland.startupweekend.org">Auckland Startup Weekend 2014</a>.<br/><br/>
+      Awesome fun event for learning the basics of founding startups and launching successful ventures.
+
+  - src: /assets/images/photos/hackathon/hady_datacomp_2013.jpg
+    caption: |
+      Acceptance speech of the Billboarders team, winners of Datacom's
+      <a href="https://www.youtube.com/watch?v=Q9UtEua32bc">Datacomp 2013</a> hackathon.
+
+  - src: /assets/images/photos/hackathon/hady_datacomp_action_2013.jpg
+    caption: |
+      Billboarders created an interactive retail billboard that is gesture controlled using Kinect for Windows during
+      the 48 hour hackathon. <br/><br/>The solution was praised for being commercially sound. The end to end experience
+      was also thought through with realtime integration with Microsoft CRM and social media.
+
+  - src: /assets/images/photos/hackathon/hady_metrocomp_2012.jpg
+    caption: |
+      Posing with my MetroFlight team, winners of <a href="https://www.youtube.com/watch?v=PAHqQs4JYLw">Datacom MetroComp 2012</a>.
+      <br/><br/>MetroFlight was a fully functioning Windows 8 app that allowed users to search and track flights
+      anywhere in the world.
+
+  - src: /assets/images/photos/hackathon/hady_hacktivate_2012.jpg
+    caption: |
+      Taking some timeout with <a href="https://twitter.com/mohitbaweja">@mohitbaweja</a> at the
+      <a href="http://hacktivate.me">Hacktivate MILE HIGH</a> hackathon in 2012 - great fun with constant curve balls being
+      thrown at us to solve.
