@@ -86,15 +86,3 @@ teaching others.
 {: .small}
 
 {% include post/_image_photoset.html collection=site.data.photoset.community %}
-
----
-
-## Keep in touch
-I am fairly active on the following social mediums if you would like to keep in touch.
-
-* [Twitter](https://twitter.com/hadynz)
-* [GitHub](http://github.com/hadynz)
-* [LinkedIn](http://nz.linkedin.com/in/hadyosman/)
-
-And of course, you can always [contact me]({{ site.data.navigation[2].url }}) the old fashion way through email if 
-you have any questions - I'd definitely love to hear from _you_.
