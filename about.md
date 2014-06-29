@@ -10,7 +10,7 @@ New Zealand.
 
 I come from a strong software services background having worked at [IBM](http://ibm.com/nz) and [Datacom](http://datacom.co.nz) 
 for around 9 years specialising as a full-stack, jack-of-all trades consultant. However, given my ambition to 
-continue evolving the passionate developer in me, I joined [Xero](http://www.xero.com) in 2013 to experience what 
+continue evolving the passionate developer in me, I joined [Xero](http://www.xero.com) in 2014 to experience what 
 it's like to work for a product based company that cares about finesse, eye for detail and beautiful code that is a 
 pleasure to work on everyday.
 
