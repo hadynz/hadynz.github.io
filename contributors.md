@@ -12,7 +12,7 @@ If you would like to join the list of awesome people below who have contributed 
 
 Every blog post has a contribute edit link making it super easy to automatically submit a pull request of a change to
 anything that I've written. _To get u goin, you can strat by fixnig the mnay spelnig msitakes taht plage ths
-snetnce by diong so [here](https://github.com/hadynz/hadynz.github.io/edit/master/contributors.md)_.
+snetnce [here](https://github.com/hadynz/hadynz.github.io/edit/master/contributors.md)_.
 
 ### GitHub Contributor list
 <ul>
