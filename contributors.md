@@ -4,15 +4,17 @@ permalink: /contributors/
 title: "Contributors"
 comments: false
 ---
+One of the beauties of hosting my blog on [GitHub Pages](https://pages.github.com/) is that the blog's source is 
+[available online](https://github.com/hadynz/hadynz.github.io) for anyone to examine and modify.
 
-These lovely people have contributed a fix to my blog. If you want
-to see yourself in this list, send me a pull request!
+If you would like to join the list of awesome people below who have contributed to fix my blog, simply send me a 
+[pull request](https://help.github.com/articles/using-pull-requests).
 
-Every post in my blog has an edit link that lets you edit the blog post directly in the browser and automatically sends me a pull request.
+Every blog post has a contribute edit link making it super easy to automatically submit a pull request of a change to
+anything that I've written. _To get u goin, you can strat by fixnig the mnay spelnig msitakes taht plage ths
+snetnce by diong so [here](https://github.com/hadynz/hadynz.github.io/edit/master/contributors.md)_.
 
-Or [visit my repository]({{site.github.repository_url}}) and send me a pull
-request the old fashioned way.
-
+### GitHub Contributor list
 <ul>
 {% for contributor in site.github.contributors %}
   <li>
