@@ -25,7 +25,7 @@ h4, h5, h6 {
     font-weight: 400;
 }
 
-.post-title {
+.post-title, .page-title {
     letter-spacing: -0.04em;
     line-height: 1.1;
     margin-top: 0;
@@ -37,7 +37,7 @@ h4, h5, h6 {
     font-size: 24px;
 }
 
-.blog-content .post-title-is-page {
+.blog-content .post-title-is-page, .page-title {
     font-size: 28px;
     padding-bottom: 14px;
     border-bottom: 1px solid #C3C3C3;
