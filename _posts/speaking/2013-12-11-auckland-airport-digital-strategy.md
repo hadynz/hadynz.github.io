@@ -8,8 +8,12 @@ categories: ['speaking']
 comments: true
 meta: true
 ---
+Intro...
+
+### Webinar
 <div class="video-wrapper">
     <iframe width="560" height="315" src="//www.youtube.com/embed/IuYBsCIRjm4?start=1580" frameborder="0" allowfullscreen></iframe>
 </div>
 
+### Slides
 <script async class="speakerdeck-embed" data-id="a089aa4045010131bcfb2eca2fe91734" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
