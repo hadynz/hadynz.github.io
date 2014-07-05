@@ -9,9 +9,7 @@ image:
   mask_style: 'opacity: 0.4;'
   credit: Auckland Startup Weekend 2014<br/><a class="u-secondary" href="http://www.janinebarr.com" target="_blank">JanineBarr.com</a>
 ---
-# Talks
+# Past Talks
 {: .page-title}
-
-Page holder to talk about my *speaking feats*.
 
 {% include posts_index.html posts=site.categories.speaking %}
