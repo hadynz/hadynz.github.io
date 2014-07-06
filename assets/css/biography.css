@@ -54,6 +54,9 @@
     .biography-is-fixed {
         width: 210px;
     }
+    .biography--avatar img {
+
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
