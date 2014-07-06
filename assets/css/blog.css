@@ -1,4 +1,9 @@
 /* Main Content */
+.blog-content {
+    z-index: 1;
+    position: relative;
+}
+
 .blog-content--inner a:not(.btn, .title-link) {
     text-decoration: underline;
 }
@@ -107,9 +112,6 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .blog-content-wrapper {
-        margin-bottom: 25px;
-    }
     .blog-content--inner h2:before {
         position: absolute;
         left: -18px;

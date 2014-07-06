@@ -4,29 +4,37 @@ html {
 }
 
 .page-footer {
-    text-align: center;
-    padding: 15px 0;
     font-size: 11px;
     color: #999;
-    z-index: -1;
 }
 
 .page-footer p:last-child {
     margin-bottom: 0;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .biography-wrapper {
+        margin-bottom: 86px; /* The exact height of the footer */
+    }
     .page-footer {
         text-align: left;
-        width: 100%;
-        padding: 0;
+        padding-bottom: 21px;
         position: absolute;
-        bottom: 40px;
+        bottom: 0;
     }
     .page-footer--inner {
         width: 215px;
-        position: relative;
-        z-index: 5;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .page-footer {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .page-footer--inner p {
+        margin: 0;
     }
 }
