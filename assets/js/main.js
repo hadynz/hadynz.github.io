@@ -5,15 +5,28 @@
  * section when a user scrolls down the page
  */
 jQuery(function($) {
-    var $biography = $('.biography');
-    var $biographyWrapper = $('.biography-wrapper');
+    var $biography = $('.biography'),
+        $biographyWrapper = $('.biography-wrapper');
 
     // A Safari-only check to implement an unfortunate hack
     var isSafari = function () {
         return (/constructor/i).test(window.HTMLElement);
     };
 
-    if ($biography.length > 0) {
+    /**
+     * Method ensures that the blog content is big enough to warrant us to fix the
+     * biography element on the page. If we don't do this check, we end up with a
+     * flicker on the page because fixing the biography element, takes it out of the
+     * page flow and all of a sudden shortens the page and in turn removes the fixing.
+     */
+    var isLongEnough = function() {
+        var $header = $('header'),
+            $blogContent = $('.blog-content');
+
+        return $header.height() + $blogContent.height() > $biography.height() + 200;
+    };
+
+    if ($biography.length > 0 && isLongEnough()) {
         var top = $biography.offset().top - 40;
 
         var fixBiographyElement = function () {
