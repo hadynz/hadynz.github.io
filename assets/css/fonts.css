@@ -54,6 +54,30 @@ h4, h5, h6 {
     line-height: 1.9;
 }
 
+/* GitHub code styling */
+/*.gist .gist-file .gist-data .line-pre,*/
+/*.gist .gist-file .gist-data .line-numbers {*/
+    /*font-family: 'Source Code Pro' !important;*/
+    /*font-size: 13px !important;*/
+    /*line-height: 18.5px !important;*/
+    /*white-space: pre !important;*/
+    /*-webkit-font-smoothing: antialiased;*/
+/*}*/
+
+.gist {
+    font-size: 13px;
+    line-height: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.gist pre {
+    font-family: Menlo, Monaco, 'Bitstream Vera Sans Mono', 'Courier New', monospace !important
+}
+
+.gist-meta a:hover {
+    color: #F36 !important
+}
+
 code {
     font-family: 'Source Code Pro';
 }

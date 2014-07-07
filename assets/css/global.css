@@ -119,7 +119,7 @@ a:hover, .post-title a:hover, #disqus_thread a {
 /* Visible / Hide Bootstrap utility that is Inline instead of Block */
 @media screen and (max-width: 767px) {
     .visible-xs-inline {
-        display: inline-block; !important
+        display: inline-block !important;
     }
     .figure--caption {
         background: #FFF;
@@ -128,7 +128,7 @@ a:hover, .post-title a:hover, #disqus_thread a {
 
 @media screen and (min-width: 768px) {
     .visible-xs-inline {
-        display: none; !important
+        display: none !important;
     }
     .figure--caption {
         position: absolute;
