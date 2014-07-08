@@ -7,6 +7,9 @@ date: 2014-06-27 12:12
 categories: ['blog']
 comments: true
 meta: true
+quote:
+    text: "There are two ways of exerting one's strength: one is pushing down, the other is pulling up."
+    author: Booker T. Washington
 ---
 One of the Git strategies that have worked well in my current project that I am working on is to have a separate
 fetch and push URL for a given repository.

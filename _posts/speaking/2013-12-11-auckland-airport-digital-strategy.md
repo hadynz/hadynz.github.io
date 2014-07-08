@@ -7,6 +7,9 @@ date: 2013-12-11
 categories: ['speaking']
 comments: true
 meta: true
+quote:
+    text: However beautiful the strategy, you should occasionally look at the results.
+    author: Sir Winston Churchill
 ---
 When I was working as an engagement manager at Datacom, one of the clients that I worked with was very closely was
 Auckland Airport. As part of one of our engagements together, we worked together on laying down a digital strategy

@@ -6,6 +6,9 @@ categories: ['blog']
 tags: ['code gem']
 comments: true
 meta: true
+quote:
+    text: Every extension of knowledge arises from making the conscious the unconscious.
+    author: Friedrich Nietzsche
 ---
 How often do you litter your code with long if-statement tests to guard against accessing a null reference of a
 property's parent like so:

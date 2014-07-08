@@ -7,6 +7,10 @@ comments: true
 meta: true
 image:
   feature: covers/sitecore-cover.jpg
+quote:
+    text: Disassociating, mindfulness, transcendence-whatever the label-it's a sort of loophole in our contract with reality, a form of self-rescue.
+    title: One Hundred Names for Love
+    author: Diane Ackerman,
 ---
 This is one of those issues that you tell people in a morning stand-up that you'd definitely get done before lunch
 and that you were jumping on another item in the backlog but then you instead end up pulling your hair for the 
