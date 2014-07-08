@@ -92,7 +92,8 @@ and may not function fully in browsers that don't support the browser postMessag
 What most documentation online misses telling people is that the `twttr` object will not be available on initial
 page load, but only after the DOM has completely loaded.
 
-If you are using JQuery as a framework on your page, you can use their [`.ready`](http://api.jquery.com/ready/).
+If you are using JQuery as a framework on your page, you can use their [`.ready`](http://api.jquery.com/ready/) 
+function.
 
 {% highlight javascript %}
 $(document).ready(function(){
@@ -118,7 +119,7 @@ follow this [walkthrough](https://developers.google.com/analytics/devguides/coll
 ### 2. Embedding Universal Analytics in your page
 If you have worked with GA in the last couple of years, you will remember that the recommended location to embed the
 GA resource scripts is at the bottom of the page just before you close the `</body>` tag. The new Universal Analytics
-tracking code is however asynchronous, and hence can be embedded in your page's `<header` tag without forcing your
+tracking code is however asynchronous, and hence can be embedded in your page's `<header>` tag without forcing your
 HTML content to wait until the file is downloaded.
 
 ## Tracking Social Media with Google Analytics
