@@ -84,8 +84,8 @@
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-    /* Mobile breakpoint has caption below photo, and hence buttons need to be moved up */
     .slick-next, .slick-prev, .slick-dots {
-        bottom: 31px;
+        margin-top: 56%;
+        top: 0;
     }
 }

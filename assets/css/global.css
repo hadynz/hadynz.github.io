@@ -86,15 +86,6 @@ a:hover, .post-title a:hover, #disqus_thread a, .u-highlight {
     line-height: 1.7;
 }
 
-.figure--caption:before {
-    width: 25%;
-    margin-left: 75%;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    display: block;
-    content: "";
-    margin-bottom: 10px;
-}
-
 /* Utility functions */
 .u-secondary {
     color: #B1ADAD;
@@ -138,6 +129,14 @@ a:hover, .post-title a:hover, #disqus_thread a, .u-highlight {
         width: 150px;
         left: -172px;
         text-align: right;
+    }
+    .figure--caption:before {
+        width: 25%;
+        margin-left: 75%;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+        display: block;
+        content: "";
+        margin-bottom: 10px;
     }
 }
 

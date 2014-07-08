@@ -1,7 +1,6 @@
 .photoset {
     position: relative;
     margin: 30px 0;
-    background: url('/assets/images/bg_ios_fabric.png') no-repeat center center;
 }
 
 .photoset .figure {
@@ -10,11 +9,18 @@
 
 .photoset .figure--image-wrapper {
     overflow: hidden;
-    padding-bottom: 66.25%;
+    padding-bottom: 65.25%;
     height: 0;
 }
 
 /* Hide all figures inside a photoset except for first (which will be a clickable figure) */
 .photoset .photoset--figure:not(:first-child):not(.slick-slide) {
     display: none;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .photoset {
+        background: url('/assets/images/bg_ios_fabric.png') no-repeat center center;
+    }
 }
