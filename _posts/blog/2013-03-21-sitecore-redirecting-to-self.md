@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sitecore login redirecting to itself"
+title: Sitecore login redirecting to self
 date: 2013-03-21
 categories: ['blog']
 comments: true
@@ -8,26 +8,35 @@ meta: true
 image:
   feature: covers/sitecore-cover.jpg
 ---
-**Issue**: When you login to Sitecore, the login page keeps redirecting to itself.
+This is one of those issues that you tell people in a morning stand-up that you'd definitely get done before lunch
+and that you were jumping on another item in the backlog but then you instead end up pulling your hair for the 
+entire day.
 
-I'm using Sitecore.NET 6.5.0 (rev. 111230) I tried to change the `Login.RememberLastLoggedInUserName` to false (was present and set to true).
-Now I don't get to see the error anymore, but when logging in I just keep getting redirected to the login page. And I'm sure I'm entering the right credentials :) No error message, just a blank login page...
+I ran into a seemingly random issue were upon login into Sitecore, I was greeted with the following .Net error:
 
-We had the same issue on 6.4.1 and I received this fix from Sitecore for this issue. It works!!! Try and see if it works for you too!
+~~~
+Object of type 'System.Int32' cannot be converted to type 'System.Web.Security.Cryptography.Purpose'
+~~~
 
-Please try to add the script like the following to the `Website\Global.asax` file (for example, right before the ending </script> tag):
+A quick google search returned many results and 
+[many of them](http://www.sitecore.net/Community/Technical-Blogs/John-West-Sitecore-Blog/Posts/2012/09/Object-of-type-System-Int32-cannot-be-converted-to-type-System-Web-Security-Cryptography-Purpose.aspx)
+recommended to set `Login.RememberLastLoggedInUserName = false`.
 
-```javascript
+Sure enough, the error went away but instead I ran into a weirder problem - the login form keeps posting to itself
+and showing a blank login form?! I swear my login credentials were typed with one finger and were correct.
+
+After much trial and error, I finally ran into the following Sitecore fixed that seemed to have fixed the problem. By 
+adding the following method to `Website\Global.asax` just before the `</script>` tag:
+
+{% highlight csharp %}
 public void FormsAuthentication_OnAuthenticate(object sender, FormsAuthenticationEventArgs args)
 {
    args.User = Sitecore.Context.User;
 }
-```
+{% endhighlight %}
 
-It was found when the user is authenticated using Forms authentication, he becomes the `sitecore\anonymous` again. So this code sets the right user after his logging in was successful.
+So what exactly does the above snippet do?
 
-Note:
-Please pay attention that this is not an official hotfix. We have not deeply tested it so I recommend you to check this workaround on your testing environment before going to the production.
-
-
-Good reference: `http://www.sitecore.net/Community/Technical-Blogs/John-West-Sitecore-Blog/Posts/2012/09/Object-of-type-System-Int32-cannot-be-converted-to-type-System-Web-Security-Cryptography-Purpose.aspx`
+Well Sitecore eventually caught up to this problem and [documented](https://kb.sitecore.net/articles/538600) that it 
+is a known problem with `< Sitecore 6.6.0 Update 1` when running under .NET Framework 4.5 and under the `Forms`
+authentication mode.
