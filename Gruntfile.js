@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = function (grunt) {
-
     grunt.initConfig({
         jshint: {
             options: {
@@ -70,7 +69,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'assets/images/',
-                        src: 'photos/**/*.{png,jpg,jpeg}',
+                        src: 'photos/**/*.{jpg,jpeg,JPG,JPEG}',
                         dest: 'assets/images/'
                     }
                 ]
@@ -86,7 +85,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'assets/images/',
-                        src: '**/*.{png,jpg,jpeg}',
+                        src: '**/*.{png,jpg,jpeg,PNG,JPG,JPEG}',
                         dest: 'assets/images/'
                     }
                 ]
@@ -126,6 +125,17 @@ module.exports = function (grunt) {
                 }
             }
         },
+        concurrent: {
+            options: {
+                logConcurrentOutput: true
+            },
+            prod: {
+                tasks: ['watch']
+            },
+            dev: {
+                tasks: ['watch:less', 'watch:css', 'watch:js', 'watch:jekyll']
+            }
+        },
         watch: {
             options: {
                 livereload: true,
@@ -149,7 +159,7 @@ module.exports = function (grunt) {
             // Listen to changes in images folders, resize, optimise, svg-optimise and then copy to _site/assets/images
             images: {
                 files: ['assets/images/**'],
-                tasks: ['image_resize', 'imagemin', 'svgmin', 'copy:images']
+                tasks: ['images']
             },
             // Listen to any Jekyll file changes and then compile
             jekyll: {
@@ -164,7 +174,23 @@ module.exports = function (grunt) {
         }
     });
 
+
+    // Run with: grunt switchwatch:target1:target2 to only watch those targets
+    grunt.registerTask('switchwatch', function () {
+        var targets = Array.prototype.slice.call(arguments, 0);
+
+        Object.keys(grunt.config('watch')).filter(function (target) {
+            return grunt.util._.indexOf(targets, target) > -1;
+        }).forEach(function (target) {
+            grunt.log.writeln('Ignoring ' + target + '...');
+            grunt.config(['watch', target], {files: []});
+        });
+
+        grunt.task.run('watch');
+    });
+
     // Load tasks
+    grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-image-resize');
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-shell');
@@ -178,6 +204,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Register tasks
-    grunt.registerTask('default', ['shell', 'connect', 'watch']);
-
+    grunt.registerTask('images', ['image_resize', 'imagemin', 'svgmin', 'copy:images']);
+    grunt.registerTask('default', ['shell', 'connect', 'switchwatch:less,css,js,jekyll']);
+    grunt.registerTask('prod', ['shell', 'connect', 'concurrent:prod']);
 };
