@@ -165,7 +165,7 @@ module.exports = function (grunt) {
             jekyll: {
                 files: [
                     '_config.yml',
-                    '*.md',
+                    '*.{md,xml}',
                     '{_layouts,_posts,_includes,_data,_posts,_drafts}/**',
                     'assets/{fonts,images}/**'
                 ],
