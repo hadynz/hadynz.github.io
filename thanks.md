@@ -3,6 +3,8 @@ layout: page
 permalink: /thanks/
 title: Thanks
 comments: false
+sitemap:
+    exclude: 'yes'
 ---
 Thanks for getting in touch.
 
