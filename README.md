@@ -45,3 +45,8 @@ Creating new post: _posts/2014-02-10-my-awesome-post.md
 
 There are a few configuration variables that can be changed in Rakefile.rb. By default posts and pages will be 
 created in MarkDown using the `.md` extension.
+
+## Keeping Jekyll up to date
+Jekyll's an active open source project, and is updated frequently. As the GitHub Pages server is updated, the software 
+on your computer may become out of date, resulting in your site appearing different locally from how it looks when 
+published on GitHub. To keep Jekyll up to date, you can run `gem update github-pages`.
