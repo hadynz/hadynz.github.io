@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 permalink: /thanks/
 title: Thanks
 comments: false

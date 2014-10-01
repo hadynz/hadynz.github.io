@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 permalink: /speaking/
 title: "Speaking"
 comments: false

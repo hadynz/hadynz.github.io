@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 permalink: /about/
 title: Hellloooo there!
 biography: false

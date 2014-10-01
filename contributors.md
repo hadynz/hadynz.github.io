@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 permalink: /contributors/
 title: "Contributors"
 comments: false

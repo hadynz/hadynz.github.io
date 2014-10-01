@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Tracking Social Media with Google Analytics "
 description: "Setting up social media analytics tracking with google analytics"
 keywords: "twitter, facebook, google+, google analytics, tracking, analysis"

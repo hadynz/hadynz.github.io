@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Setting up different fetch and push URLs in Git"
 description: "Configuring Git to set different fetch and push URLs"
 keywords: "git, push url, configuration"

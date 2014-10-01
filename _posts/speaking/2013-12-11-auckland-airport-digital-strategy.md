@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Auckland Airport's Digital Strategy Webinar
 description: Strategy and key learnings behind Auckland Airport's double award winning website in 2013
 keywords: "auckland airport, digital, disruption, sitecore, webinar, crm, integration"

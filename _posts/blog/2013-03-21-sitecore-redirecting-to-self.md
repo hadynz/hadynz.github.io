@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Sitecore login redirecting to self
 date: 2013-03-21
 categories: ['blog']

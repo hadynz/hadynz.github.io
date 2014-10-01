@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Sample Link Post"
 link: http://www.google.com
 description: "Example and code for using link posts."

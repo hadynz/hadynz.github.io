@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Object Eval Extension
 date: 2012-10-22 -1726
 categories: ['blog']

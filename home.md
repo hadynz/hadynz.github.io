@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 title: It’s easy to focus on optimising code for technology<br/>that we forget to optimise code for <span class="emphasis">people</span> <span class="quote u-dash u-secondary"><a href="http://humanjavascript.com" class="u-secondary" target="_blank">Human JavaScript</a></span>
 permalink: /
 image:

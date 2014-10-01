@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Five Scrum misconceptions"
 description: "Five misconceptions applying scrum in teams based on the official Scrum Guide"
 categories: ['blog']

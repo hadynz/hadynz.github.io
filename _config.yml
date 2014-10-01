@@ -35,7 +35,7 @@ markdown: kramdown
 kramdown:
   use_coderay: true
   coderay:
-    coderay_line_numbers: nil
+    coderay_line_numbers: null
     coderay_css: class
 
 # Site Defaults
@@ -54,7 +54,7 @@ defaults:
   -
     scope:
       path: ''
-      type: 'post'
+      type: 'posts'
     values:
       categories: ['blog']
       comments: true

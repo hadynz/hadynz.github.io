@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Configuring Jekyll to play with Grunt and LiveReload"
 description: "Configuring Jekyll to build with Grunt and LiveReload"
 categories: ['blog']

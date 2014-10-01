@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Writing JavaScript as a Team"
 description: "Learning how to write JavaScript code that can scale and without one rock star leading the development"
 categories: ['blog']

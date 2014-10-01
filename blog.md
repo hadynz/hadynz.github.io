@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 permalink: /blog/
 title: My Posts
 tagline: A List of Posts

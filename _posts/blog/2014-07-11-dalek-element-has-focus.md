@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "DalekJS: Test if an element has focus"
 description: "How to test if an element has focus in DalekJS"
 keywords: "dalekjs, testing, focus, workaround"
