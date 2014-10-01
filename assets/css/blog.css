@@ -47,6 +47,24 @@
     color: #F36;
 }
 
+.blog-content--inner-article blockquote p {
+    line-height: 1.9;
+    -webkit-font-smoothing: initial;
+    color: #888;
+}
+
+.blog-content--inner-article blockquote cite {
+    color: #AAA;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 12px;
+}
+
+.blog-content--inner-article blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
 /* Funky comment like :before/:after pseudo selectors */
 .blog-content--inner h2:before,
 .blog-content--inner h3:before,
