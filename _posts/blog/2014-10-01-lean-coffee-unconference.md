@@ -25,6 +25,9 @@ Well, in a casual brown-bag seminar yesterday at [Xero](http://www.xero.com) abo
 by [@Richard S-W-H](https://twitter.com/RSWH66), our Agile coach crusader, to **Lean Coffee** &mdash; an alternative 
 meeting facilitation technique like none that I've attended before.
 
+To skip to learning how to conduct a Lean Coffee meeting [click here](#how-it-works).
+{: .alert.alert-warning }
+
 ## So... what's Lean Coffee?
 [Lean Coffee](http://leancoffee.org) is a structured, but agenda-less, meeting facilitation technique that encourages 
 and *ensures* an open and focused conversation amongst people in a democratic manner. It does so by:
@@ -63,6 +66,15 @@ what they are saying when they are not.
 
 The driving principles behind Lean Coffee were spawned from these challenges and addresses them in a fun and efficient 
 manner with benefit to the majority first and foremost.
+
+## When is it applicable?
+Like any tool in life, Lean Coffee is a technique that is better suited to certain types of meetings. For example,
+you would not want to use Lean Coffee in a decision making meeting that expects actions as outcomes. Instead, you can 
+use it as an informal session to discuss:
+
+* Shared experiences on common themes amongst participants
+* Ideas on becoming more efficient and effective
+* Thoughts on improving processes
 
 ## How it works
 
