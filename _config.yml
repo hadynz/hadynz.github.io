@@ -39,6 +39,14 @@ kramdown:
     coderay_line_numbers: null
     coderay_css: class
 
+# Extend Jekyll with custom Gems
+gems:
+  - jekyll-mentions
+
+# Configure Jekyll-Mentions gem
+jekyll-mentions:
+  base_url: https://twitter.com
+
 # Site Defaults
 defaults:
 

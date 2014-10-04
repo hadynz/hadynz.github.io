@@ -21,9 +21,9 @@ back!". Having meetings hijacked by a select loud few, or well understood and ag
 again was nothing surprising - that's just a reflection on how diverse we are as people and the general nature of meetings... 
 and we all accept it, right?
 
-Well, in a casual brown-bag seminar yesterday at [Xero](http://www.xero.com) about Agile methodology, I was introduced 
-by [@Richard S-W-H](https://twitter.com/RSWH66), our Agile coach crusader, to **Lean Coffee** &mdash; an alternative 
-meeting facilitation technique like none that I've attended before.
+Well, in a casual brown-bag seminar yesterday at @Xero about Agile methodology, I was introduced by @RSWH66, our Agile 
+coach crusader, to **Lean Coffee** &mdash; an alternative meeting facilitation technique like none that I've attended 
+before.
 
 To skip to learning how to conduct a Lean Coffee meeting [click here](#how-it-works).
 {: .alert.alert-warning }
