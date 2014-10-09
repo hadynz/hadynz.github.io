@@ -117,6 +117,31 @@
     line-height: 1.6;
 }
 
+/* Tables */
+.blog-content table {
+    word-break: normal;
+    margin-bottom: 20px;
+}
+
+.blog-content table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.blog-content table tr:nth-child(2) {
+    background-color: #f8f8f8;
+}
+
+.blog-content table th {
+    font-weight: bold;
+}
+
+.blog-content table th,
+.blog-content table td {
+    padding: 5px 12px;
+    border: 1px solid #ddd;
+}
+
 /* Other */
 .meta {
     font-size: 14px;
