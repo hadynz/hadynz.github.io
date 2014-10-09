@@ -2,7 +2,7 @@
 layout: posts
 title: "Lean Coffee - The mini-unconference"
 description: "Sip a cuppa and engage in discussion without personal agendas or assumptions"
-keywords: "lean coffee, time-box, agile, brainstorm, discussion, unconference"
+keywords: "lean coffee, timebox, agile, brainstorm, discussion, unconference, meeting, facilitation, agendas, retrospective"
 date: 2014-10-01 22:22
 categories: ['blog']
 tags: ['agile']
@@ -32,7 +32,8 @@ To skip to learning how to conduct a Lean Coffee meeting [click here](#how-it-wo
 [Lean Coffee](http://leancoffee.org) is a structured, but agenda-less, meeting facilitation technique that encourages 
 and *ensures* an open and focused conversation amongst people in a democratic manner. It does so by:
 
-* Allowing participants to agree on the topics to be discussed and their order in an informal setting &mdash; **Open**
+* Allowing participants to agree at the start of the meeting on the topics to be discussed and their order in an 
+informal setting &mdash; **Open**
 * Timeboxing each topic being discussed &mdash; **Focus**
 * Allowing participants to vote on whether to continue or move on from the current topic based on
 how they think the conversation is flowing &mdash; **Democratic**
