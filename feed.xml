@@ -15,6 +15,7 @@ exclude: 'yes'
         {% if site.owner.email %}
             <webMaster><![CDATA[{{ site.owner.email }}]]></webMaster>
         {% endif %}
+        <updated>{{ site.time | date_to_xmlschema }}</updated>
         <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
         <generator uri="http://jekyllrb.com">Jekyll on GitHub Pages</generator>
         <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
