@@ -1,7 +1,7 @@
 ---
 layout: posts
-title: "XSS Learnings"
-description: "...."
+title: "5 Takeaways to rid your site from XSS vulnerabilities"
+description: "If you are a developer, you need to take security very seriously and here is why"
 keywords: "xss, cross site scripting, hacking, vulnerability, scripting"
 date: 2014-10-09 23:13
 categories: ['blog']
@@ -16,41 +16,41 @@ quote:
     title: The College Blue Book
     author: Anthony J. D'Angelo
 ---
+Every couple of years ["The Open Web Application Security Project" (OWASP)][6] publishes its [Top 10 list][1] of most
+prevalent web application security flaws and often people complain that nothing new has come up. There in itself lies
+a **problem**, and as rightful developers we need to take heed of this anti-pattern and do something about it.
 
+One of those ever present vulnerabilities that is always likely to exist on a website most of the time is
+Cross-site scripting (XSS)[^1].
 
-5 Learnings fixing XSS vulnerabilities
+[**Cross-site scripting (XSS)**][5] is the most prevalent web application security flaw. **XSS** flaws occur when an
+application includes user supplied data in a page sent to the browser without properly validating or escaping that
+content.
+{: .alert.alert-warning }
 
-Most common security risks [OWASP Top 10][1]. Comes out every few years. People often complain howcome nothing new
-comes up? Well, that's a problem too.
+Even though the move to modern development frameworks such as .NET, which provide automatic protection against this
+vulnerability amongst others, has removed a lot of the onus on developers to understand its technical detail, lack of
+understanding of security flaws and the increase in client side code are two areas that IMO continues to keep XSS at
+the top of the security flaws list.
 
-Whitehat Security Report shows that XSS is second most likely vulnerability to exist on a website at 53% just behind
-Information Leakage (55%).
+> It is a technical debt that you will have to pay sooner or later.
 
-Information Leakage: Note: For those unfamiliar, Information Leakage is largely a catch-all term used to describe
-                     a vulnerability where a website reveals sensitive data, such as technical details of the Web
-                     application, environment, or user-specific data: sensitive data that's completely unnecessary
-                     for a typical visitor, but may be used by an attacker to exploit the system, its hosting network,
-                     or users. Common examples are a failure to scrub out HTML/ JavaScript comments containing
-                     sensitive information (database passwords), improper application or server configurations, or
-                     differences in page responses for valid versus invalid data.
+Whilst tasked to fix XSS security holes in a legacy application that I was supporting, the exercise was so
+daunting and time consuming that it made me firm up my belief that security indeed needs to be taken very seriously.
+It is a technical debt that you will have to pay sooner or later.
 
-Moving towards client site
+There are automated tools that can find and identify XSS problems automatically. However because every application
+builds output pages differently &mdash; with a mixture of server and client side &mdash; automated detection has
+become very difficult. It is only with code review (requiring strong implementation awareness) and laborious manual
+regression testing that a level of near complete coverage can be achieved.
 
-// Not meant to be a lenghty write-up. But provides you with just enough context to know what you want to read up on
-to solve the problem on hand
+So don't let things slip this far in your current development. **Update your project's [DoD][7]** and add specific
+references to security as a first step.
 
-// XSS remains in the top 10 of vlunerbailities of all time. This list has not changed because ...
+In the mean time, I share with you 5 key takeaways from my sprint of learning to comprehensively prevent XSS
+taking place on your site.
 
-// Escaping a given char set is never enough
-
-Tedious!
-
-Automated tools can find some XSS problems automatically. However, each application builds output pages differently
-and uses different browser side interpreters such as JavaScript, ActiveX, Flash, and Silverlight, making automated
-detection difficult. Therefore, complete coverage requires a combination of manual code review and penetration testing,
-in addition to automated approaches.
-
-// 1 - Encoding
+## 1. Encoding
 Input is left as is, and not santized. For a system that already exists in Production, think about the content
 that has already been entered by users already.
 
@@ -64,9 +64,20 @@ everywhere, you are still most likely vulnerable to XSS. You MUST use the escape
 document you're putting untrusted data into. That's what the rules below are all about.
 https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
 
-// 2 - Locator strings
+## 2. Locator Strings
 
-// 3 - White list for absolute URL's
+~~~
+';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";
+alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--
+></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+~~~
+
+~~~
+'';!--"<XSS>=&{()}
+~~~
+
+
+## 3. White list HREF SRC attributes
 Positive or “whitelist” input validation is also recommended as it helps protect against XSS, but is not a complete
 defense as many applications require special characters in their input. Such validation should, as much as possible,
 validate the length, characters, format, and business rules on that data before accepting the input.
@@ -84,6 +95,7 @@ validate the length, characters, format, and business rules on that data before 
 
 ```
 
+## 4. E
 // 4 - How to exploit a XSS vulnerable site
 * Using <svg onload="..." />
 * Using <img onload="..." />
@@ -118,16 +130,6 @@ Character | HTML Encoding |
 
 
 #### XSS Locator
-~~~
-';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";
-alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//--
-></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
-~~~
-
-#### XSS locator 2
-~~~
-'';!--"<XSS>=&{()}
-~~~
 
 
 {% highlight javascript %}
@@ -190,6 +192,9 @@ Heaps of other methods. Suggest that you listen to [Application Security for RIA
 tempted to try on my site and see if it has any effects increasing the number of followers on my twitter - just kidding!
 
 ## References:
+[^1]: [Whitehat Security Report][2] shows that XSS is second most likely vulnerability to exist on a website at 53%
+just behind Information Leakage (55%).
+
 * https://github.com/cure53/xss-challenge-wiki/wiki/prompt.ml
 * http://prompt.ml/0
 
@@ -197,3 +202,6 @@ tempted to try on my site and see if it has any effects increasing the number of
 [2]: https://www.whitehatsec.com/assets/WPstatsReport_052013.pdf
 [3]: http://beefproject.com
 [4]: http://www.sencha.com/conference/session/application-security-for-rias
+[5]: http://en.wikipedia.org/wiki/Cross-site_scripting
+[6]: https://www.owasp.org/index.php/About_OWASP
+[7]: https://www.scrum.org/Resources/Scrum-Glossary/Definition-of-Done
