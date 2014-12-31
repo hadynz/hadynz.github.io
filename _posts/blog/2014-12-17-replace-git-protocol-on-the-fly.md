@@ -17,11 +17,10 @@ messes with our ability to fetch public and privately shared Git repositories.
 I've run in this scenario this week and it is incredibly frustrating. For some reason, whenever I was
 doing a `bower install` inside a local Git repository I was getting the following *intermittent* error:
 
-~~~
+{% highlight bash %}
 fatal: unable to connect to github.xxx.com:
 github.xxx.com[0: XXX.XX.XXX.XXX]: errno=Operation timed out
-
-~~~
+{% endhighlight %}
 
 This issue was sporadic and hence very hard to tie down by myself or internal IT. Anyway, surely life
 cannot always suck and there are workarounds?
@@ -32,10 +31,10 @@ if ever be blocked by your corporate firewall.
 Not wanting to change my project's `bower.json` which is using `git://`, the following command line allowed
 me to change the protocol to `https://` on the fly either globally or against a local repository.
 
-~~~
+{% highlight bash %}
 # Global
 $ git config --global url."https://".insteadOf git://
 
 # Non-Global (for current repository only)
 $ git config url."https://".insteadOf git://
-~~~
+{% endhighlight %}
