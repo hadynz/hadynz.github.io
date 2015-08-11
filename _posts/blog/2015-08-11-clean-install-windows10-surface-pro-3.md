@@ -7,6 +7,9 @@ date: 2015-08-11 21:45
 categories: ['blog']
 comments: true
 meta: true
+quote:
+    text: "A house without books is like a room without windows."
+    author: Horace Mann
 ---
 So Windows 10 has just been released to the masses with a promise to undo all the problems that plagued its predecessor - 
 Windows 8.
