@@ -15,7 +15,8 @@ quote:
 * Seeding Eyes
 * Significant reduction of technical dependency on individuals - shared common language
 * Accountability
-* 
+* Trust - essential base. Time, showing vulnerability, growing people, seeing results
+* Succeess breeds success
 
 ### Hady Notes
 
