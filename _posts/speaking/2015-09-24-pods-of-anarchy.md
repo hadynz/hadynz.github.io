@@ -8,8 +8,9 @@ categories: ['speaking']
 comments: true
 meta: true
 quote:
-    text: The most exciting phrase to hear in science, the one that heralds new discoveries, is not 'Eureka!' (I found it!) but 'That's funny ...'
-    author: Isaac Asimov
+    text: In a world like this one, only the random makes sense.
+    title: Going Bovine
+    author: Libba Bray
 ---
 This was a lightning talk that I gave at [Agile Auckland][1] about an experiment that we ran at work with self reorganising teams.
 
