@@ -3,6 +3,11 @@
 # {% include post/_image_photoset.html collection=site.data.photoset.#name %}
 #
 futsal:
+  - src: /assets/images/photos/futsal/nff_nationals.jpg
+    caption: |
+      A mid-air motion shot taken by an unnamed photography wizard at the 2014 NZ Futsal Nationals in Wellington.
+      In the name of transparency, as impressive as this shot might look like, the ball ended up going no where near the goal.
+
   - src: /assets/images/photos/futsal/hady_colombia1.jpg
     caption: |
       New Zealand vs Colombia. The 'ne plus ultra' (highlight) of my career - representing
