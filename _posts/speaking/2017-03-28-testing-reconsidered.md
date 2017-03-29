@@ -21,6 +21,11 @@ short at boundaries, and the eventual blurring of boundaries between the role of
 
 In essence, we had to ensure that **all team members** were responsible for quality.
 
+### Talk Recording
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZMfbUPU734w" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ### Slides
 <script async class="speakerdeck-embed" data-id="d6c4586cf2824589b1b8f13a3a1400b0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
