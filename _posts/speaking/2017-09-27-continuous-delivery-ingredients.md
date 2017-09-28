@@ -7,6 +7,8 @@ date: 2017-09-27
 categories: ['speaking']
 comments: true
 meta: true
+image:
+  feature: covers/speed-cover.jpg
 quote:
     text: We all have life storms, and when we get the rough times and we recover from them, we should celebrate that we got through it. No matter how bad it may seem, there's always something beautiful that you can find.
     author: Mattie Stepanek
