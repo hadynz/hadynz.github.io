@@ -27,6 +27,4 @@ This talk was delivered at the [Agile Auckland][1] meetup.
 ### Slides
 <iframe src="https://docs.google.com/a/xero.com/presentation/d/e/2PACX-1vT5l0rpK_ry1D3uBx2-wIt9_way9-LOCWOwCgKNjHi_NHnrS4-eOak7yVxQWO0rv73iZImA-o9pBZwV/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<script async class="speakerdeck-embed" data-id="ac1da43f3e6945cb9851ad1e58c7f446" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 [1]: https://www.meetup.com/Agile-Auckland/events/243512759/
