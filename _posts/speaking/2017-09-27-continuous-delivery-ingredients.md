@@ -27,6 +27,10 @@ demand with a warm cup of tea in hand.
 
 This talk was delivered at the [Agile Auckland][1] meetup.
 
+### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3pY4_Gtv8ZY?rel=0" frameborder="0" allowfullscreen></iframe>
+
 ### Slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vREMz8pdS22S_HZDFmjfcw3kqUdczA6nQg1TAP4MpdlMHyvDCsWPlmdba1forUrkUzxh4Gz0QsI0FCf/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
