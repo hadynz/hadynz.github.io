@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Testing Microservices - Shedding the monolith mindset
-description: 
+description: The value prop of microservices is to enable teams to develop, deploy and scale independently. Yet why do we still insist on testing everything together?
 keywords: "microservices, production, testing, contract driven development, pact, monolith, feature flagging"
 date: 2018-04-14
 categories: ['speaking']
