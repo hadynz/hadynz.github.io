@@ -8,9 +8,7 @@ categories: ['speaking']
 comments: true
 meta: true
 quote:
-    text: True refuge is that which allows us to be at home, at peace, to discover true happiness. The only 
-    thing that can give us true refuge is the awareness and love that is intrinsic to who we are. Ultimately, 
-    it's our own true nature.
+    text: True refuge is that which allows us to be at home, at peace, to discover true happiness. The only thing that can give us true refuge is the awareness and love that is intrinsic to who we are. Ultimately, it's our own true nature.
     author: Tara Brach
 ---
 
