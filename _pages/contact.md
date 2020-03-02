@@ -11,4 +11,4 @@ You can also keep up with my online presence on [GitHub](http://github.com/hadyn
 [LinkedIn](http://nz.linkedin.com/in/hadyosman/).
 
 I can also be contacted the old fashioned way via email if you have something longer 
-to talk about on "<hadyos at gmail.com>".
+to talk about on "\<hadyos at gmail.com\>".
